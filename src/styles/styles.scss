@@ -1,0 +1,110 @@
+@import './variables.scss';
+@import './utilities.scss';
+@import './layout.scss';
+
+@import './header.scss';
+
+.s-top-banner {
+    padding-top: 70px;
+    font-size: .8rem;
+
+    @media(min-width: $breakpoint-sm) {
+        padding-top: 160px;
+        min-height: 280px;
+        font-size: 1rem;
+    }
+
+    &__image {
+        height: 100%;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        min-height: 180px;
+
+        @media(min-width: $breakpoint-md) {
+            min-height: 380px;
+        }
+    }
+
+    &__text {
+        padding: 2em;
+        font-size: .9rem;
+
+        @media(min-width: $breakpoint-md) {
+            font-size: 1.2rem;
+        }
+
+        p {
+            color: $white;
+            text-align: center;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        .s-highlight {
+            color: $col2;
+        }
+    }
+
+    .s-divider {
+        width: 30%;
+        margin: 0 auto;
+        height: 1px;
+        background: $col2;
+    }
+}
+
+// generic section header
+.s-section-header {
+    font-size: 1.5rem;
+    margin: 3rem 0;
+    text-align: center;
+
+    @media(min-width: $breakpoint-sm) {
+        font-size: 2rem;
+        margin: 5rem 0;
+    }
+
+    &__subtitle {
+        font-size: .9rem;
+    }
+}
+
+// Sections
+section p {
+    color: $gray-600;
+}
+
+.s-solutions {
+    &__header {}
+
+    &__links {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            width: 100%;
+        }
+
+        li a {
+            padding: 0 1rem;
+            display: block;
+            line-height: 2.4rem;
+            border-bottom: 1px solid $gray-300;
+            color: $gray-700;
+            font-weight: 600;
+            transition: all .3s ease-out;
+
+            &:hover {
+                text-decoration: none;
+                color: $col5;
+                border-bottom: 1px solid $col5;
+            }
+        }
+    }
+}
+
+.s-approach {}
+
+.s-footer {}

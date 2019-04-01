@@ -1,0 +1,13 @@
+// global layout stuff e.g grid extensions, rendering and typography
+
+body {
+    background: $white;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// extends bootstrap conainer max-width
+.container--narrow {
+    max-width: 800px;
+}

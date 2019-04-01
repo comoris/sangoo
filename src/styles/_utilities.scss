@@ -1,0 +1,73 @@
+@each $name,
+$hex in $gray-shades {
+    .bg-#{$name} {
+        background: $hex;
+    }
+
+    .text-#{$name} {
+        color: $hex;
+    }
+}
+
+@each $name,
+$hex in $col-shades {
+    .bg-#{$name} {
+        background: $hex;
+    }
+
+    .bg-#{$name}-dark {
+        background: darken($hex, 5%);
+    }
+
+    .text-#{$name} {
+        color: $hex;
+    }
+}
+
+// Extending Bootstrap utility spacing classes
+// https://getbootstrap.com/docs/4.1/utilities/spacing/
+@each $space in $spacers {
+    .pt-#{$space} {
+        padding-top: #{$space}rem;
+    }
+
+    .pb-#{$space} {
+        padding-bottom: #{$space}rem;
+    }
+
+    .py-#{$space} {
+        padding-top: #{$space}rem;
+        padding-bottom: #{$space}rem;
+    }
+
+    .mt-#{$space} {
+        margin-top: #{$space}rem;
+    }
+
+    .mb-#{$space} {
+        margin-bottom: #{$space}rem;
+    }
+
+    .my-#{$space} {
+        margin-top: #{$space}rem;
+        margin-bottom: #{$space}rem;
+    }
+}
+
+// Width
+.w-md-50 {
+    @media (min-width: $breakpoint-md) {
+        width: 50% !important;
+    }
+}
+
+.w-sm-50 {
+    @media (min-width: $breakpoint-sm) {
+        width: 50% !important;
+    }
+}
+
+// Shadows
+.s-shadow-xl {
+    box-shadow: 0 11px 26px 0 rgba(0, 0, 0, 0.25);
+}
