@@ -38,17 +38,17 @@
 
             <ul class="nav">
               <li class="nav-item">
-                <a class="nav-link active" onclick="toggleMobileMenu()" href="#">Our approach</a>
+                <a class="nav-link active" onclick="toggleMobileMenu()" href="#approach">Our approach</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" onclick="toggleMobileMenu()" href="#">About us</a>
+                <a class="nav-link" onclick="toggleMobileMenu()" href="#aboutus">About us</a>
               </li>
               <!-- experience hier weggehaald - op de home moet de link naar volgende pagina's gemaakt worden via drie gekleurde blokken - althans dat was het plan 
                 <li class="nav-item">
                 <a class="nav-link" onclick="toggleMobileMenu()" href="./experience.html">Experience</a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" onclick="toggleMobileMenu()" href="#">Contact</a>
+                <a class="nav-link" onclick="toggleMobileMenu()" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -103,13 +103,16 @@
         </div>
 
         <div class="row">
+         
           <div class="col-md-4">
+            <a href="./inspiration.html">
             <div class="s-solutions__header bg-col3 text-center text-white py-3 px-2 rounded mb-3">
               <span class="d-block">change</span>
               <span class="h3 font-weight-bold">inspiration</span>
             </div>
+          </a>
             <ul class="s-solutions__links">
-              <li><a href="">Keynote (building change awareness)</a></li>
+              <li><a href="">Keynote (change awareness)</a></li>
               <li><a href="">Youtube</a></li>
               <li><a href="">Bite size change tips in a box</a></li>
               <li><a href="">Assess your change!</a></li>
@@ -118,7 +121,7 @@
           <div class="col-md-4">
             <div class="s-solutions__header bg-col2 text-center text-white py-3 px-2 rounded mb-3">
               <span class="d-block">change leadership</span>
-              <span class="h3 font-weight-bold">experiences</span>
+              <span class="h3 font-weight-bold">learning experiences</span>
             </div>
             <ul class="s-solutions__links">
               <li><a href="">Learning experience for executives</a></li>
@@ -144,7 +147,7 @@
     <!-- Approach -->
     <div class="bg-gray-100">
       <div class="container container--narrow">
-        <section class="s-approach">
+        <section id="approach" class="s-approach">
           <div class="row">
             <div class="col-12">
               <h2 class="s-section-header">Our approach</h2>
@@ -206,7 +209,7 @@
 
     <!-- About -->
     <div class="container container--narrow">
-      <section class="s-about">
+      <section id="aboutus" class="s-about">
         <div class="row">
           <div class="col-12">
             <div class="s-section-header">
@@ -251,7 +254,7 @@
     <!-- Customers -->
     <div class="bg-gray-100">
       <div class="container container--narrow">
-        <section class="s-customers">
+        <section id="contact" class="s-customers">
           <div class="row">
             <div class="col-12">
               <div class="s-section-header">
@@ -264,7 +267,7 @@
 
           <div class="row">
             <div class="col-12 mb-6">
-              <img class="img-fluid" src="./images/customers.png" alt="" />
+              <img class="img-fluid" src="./images/customers_update.png" alt="" />
             </div>
           </div>
         </section>
@@ -290,11 +293,11 @@
               <div class="w-md-50 m-auto">
                 <form name="contact-form" id="contact-form">
                   <div class="form-group">
-                    <label for="email" class="d-block text-white">E-mail</label>
+                    <label for="email" class="d-block text-white">Your e-mail</label>
                     <input class="form-control" id="email" name="from" type="text">
                   </div>
                   <div class="form-group">
-                    <label for="textarea" class="d-block text-white">Questions / remarks</label>
+                    <label for="textarea" class="d-block text-white">Anything you want us to know before we get in touch with you?</label>
                     <textarea class="form-control" id="textarea" name="remarks" rows="3"></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary btn-block smb-2">Send</button>
