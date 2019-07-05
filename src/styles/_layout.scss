@@ -11,3 +11,13 @@ body {
 .container--narrow {
     max-width: 800px;
 }
+
+.responsive-img {
+    &-sm {
+        @media (max-width: $breakpoint-sm) {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

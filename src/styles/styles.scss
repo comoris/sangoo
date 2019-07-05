@@ -76,7 +76,16 @@ section p {
 }
 
 .s-solutions {
-    &__header {}
+    &__header {
+        transition: all .15s ease-out;
+
+        &:hover {
+            text-decoration: none;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px 0 rgba(150, 150, 150, .5);
+            cursor: pointer;
+        }
+    }
 
     &__links {
         margin: 0;
