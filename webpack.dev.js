@@ -119,6 +119,11 @@ module.exports = {
       template: './src/experience.html',
       // inject: 'body',
     }),
+    new HtmlWebpackPlugin ({
+      filename: 'inspiration.html',
+      template: './src/inspiration.html',
+      // inject: 'body',
+    }),
     new CopyWebpackPlugin ([
       {
         from: 'src/assets/images',
