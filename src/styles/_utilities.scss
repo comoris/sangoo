@@ -28,29 +28,29 @@ $hex in $col-shades {
 // https://getbootstrap.com/docs/4.1/utilities/spacing/
 @each $space in $spacers {
     .pt-#{$space} {
-        padding-top: #{$space}rem;
+        padding-top: #{$space}rem !important;
     }
 
     .pb-#{$space} {
-        padding-bottom: #{$space}rem;
+        padding-bottom: #{$space}rem !important;
     }
 
     .py-#{$space} {
         padding-top: #{$space}rem;
-        padding-bottom: #{$space}rem;
+        padding-bottom: #{$space}rem !important;
     }
 
     .mt-#{$space} {
-        margin-top: #{$space}rem;
+        margin-top: #{$space}rem !important;
     }
 
     .mb-#{$space} {
-        margin-bottom: #{$space}rem;
+        margin-bottom: #{$space}rem !important;
     }
 
     .my-#{$space} {
-        margin-top: #{$space}rem;
-        margin-bottom: #{$space}rem;
+        margin-top: #{$space}rem !important;
+        margin-bottom: #{$space}rem !important;
     }
 }
 

@@ -1,0 +1,19 @@
+.story-container {
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+.story-container>div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    min-height: 160px;
+    transition: all .3s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 24px 48px rgba(100, 100, 100, .3);
+    }
+}

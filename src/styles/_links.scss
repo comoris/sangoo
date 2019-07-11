@@ -1,0 +1,40 @@
+.s-arrow-link {
+    box-shadow: -4px 8px 8px 0 rgba(20, 20, 20, .05);
+    background: white;
+    transition: all .15s ease-out;
+    border-radius: 40px;
+
+    a {
+        text-decoration: none;
+    }
+
+    .s-arrow-text {
+        color: $gray-400;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .s-arrow-icon {
+        fill: $col5;
+        cursor: pointer;
+        width: 14px;
+        height: 14px;
+    }
+
+    &:hover {
+        background: white;
+        transform: translateY(-2px);
+        box-shadow: -8px 4px 16px 0 rgba(100, 100, 100, .2), 0 26px 44px 0 rgba(100, 100, 100, .3);
+
+        .s-arrow-icon {
+            fill: $col1;
+        }
+
+        .s-arrow-text {
+            color: $col1;
+        }
+    }
+
+}
