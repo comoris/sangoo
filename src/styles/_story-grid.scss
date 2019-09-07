@@ -3,6 +3,13 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: auto auto auto;
+
+    @media (max-width: 576px) {
+        display: inline;
+        grid-column:1 ;
+        grid-row:1;
+        }
+    
 }
 
 .story-container>div {
@@ -13,6 +20,11 @@
     max-width: 100%;
     transition: all .3s ease-out;
     cursor: pointer;
+    
+    @media (max-width: 576px) {
+        margin-bottom:10px;
+        }
+
 
     & a {
         display: block;
@@ -20,5 +32,6 @@
 
     &:hover {
         box-shadow: 0 24px 48px rgba(100, 100, 100, .3);
+        //transform: scale(1.05);
     }
 }

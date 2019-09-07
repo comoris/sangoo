@@ -12,6 +12,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poiret+One" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
@@ -38,6 +39,9 @@
             </div>
 
             <ul class="nav">
+              <li class="nav-item">
+                    <a class="nav-link active" onclick="toggleMobileMenu()" href="#products">Our products and services</a>
+                  </li>
               <li class="nav-item">
                 <a class="nav-link active" onclick="toggleMobileMenu()" href="#approach">Our approach</a>
               </li>
@@ -68,7 +72,7 @@
     </div>
 
     <div class="container">
-      <section class="s-top-banner">
+      <section class="s-top-banner" id="products">
 
         <div class="row">
           <div class="col-12">
@@ -248,7 +252,46 @@
       </section>
     </div>
 
-<!-- Let's talk -->
+<!-- top stories-->
+
+<div class="pb-7">
+    <div class="container container--narrow">
+      <section class="s-stories">
+        <div class="row">
+          <div class="col-12">
+            <div class="s-section-header">Top Stories
+            </div>
+          </div>
+        </div>
+        <style>
+          /* Customize story-grid here */
+          .story-container>div {
+            min-height: 160px;
+          }
+
+          .story-item-1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            min-height: 250px;
+          }
+        </style>
+        <div class="row">
+          <div class="story-container">
+            <div class="story-item-1 bg-gray-100" style="background-image: url('./images/testimonial_VPK.jpg'); background-size:cover"> <div class="s-story-over__header">VPK testimonial<div class="s-story-over__sub">Wim Naessens COO Paper</div></div></div>
+            <div class="story-item-2 bg-gray-300" style="background-image: url('./images/grid_video_4.jpg'); background-size:cover"><div class="s-story-over__square">VIDEO TIP #4</div></div></a>
+            <div class="story-item-3 bg-gray-300"></div>
+            <div class="story-item-4 bg-gray-100"></div>
+            <div class="story-item-5 bg-gray-300"></div>
+            <div class="story-item-6 bg-gray-100"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<!-- Let's talk
     <div class="bg-col1-dark">
       <div class="container container--narrow">
         <section class="s-contact">
@@ -279,9 +322,9 @@
             </div>
          </section>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Customers -->
+    <!-- Customers 
     <div class="bg-white">
       <div class="container container--narrow">
         <section id="contact" class="s-customers">
@@ -305,13 +348,13 @@
             </div>
         </section>
       </div>
-    </div>
+    </div>-->
 
     
 
 
   </main>
-
+  ${require('./partials/footer.html')}
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
