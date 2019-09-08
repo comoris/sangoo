@@ -11,8 +11,11 @@
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poiret+One" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
   <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
@@ -23,7 +26,7 @@
       <div class="container">
         <div class="row">
           <div class="s-nav-wrapper d-flex flex-fill justify-content-between align-items-center">
-            <div class="s-logo" href="#">
+            <div class="s-logo" href="">
               <svg viewBox="0 0 300 90">
                 <path
                   d="M161 21.4c-12.6 0-21.4 8.9-21.4 21.5 0 10 7.5 17.2 17.7 17.2 4 0 7.2-1.4 9.2-3.4V58c-.5 6-3 8.2-9.3 8.2-3.4 0-5.1-.6-7.5-1.8l-1-.5-4.6 9.2.6.6c1.7 1.5 7.4 3.7 13.2 3.7 14.1 0 20.3-10.1 20.3-20.1V40c.2-11.1-6.8-18.6-17.2-18.6zm5.3 19.2c0 2.8-.7 5.1-2.1 6.7-1.3 1.5-3.1 2.3-5.3 2.3-4 0-6.8-3.3-6.8-7.9 0-5.3 3.3-9.2 7.9-9.2 4-.1 6.3 2.9 6.3 8.1zm-128.2-2C31 37.5 31 36.7 31 35.8s0-3.4 6.9-3.4c2.9 0 5.9.7 8.3 1.8l1.9.9L46.4 24l-.5-.3c-2.4-1.4-5.4-2.1-9-2.1-10.3 0-18.1 6.5-18 15 0 6.6 4.4 10.4 13.5 11.7 7.4 1 7.4 2.2 7.4 3.3s-.4 1.8-1.3 2.4c-1 .6-2.7.9-4.9.9-2.7 0-5.9-.7-8.4-1.8l-.8-.3-6.1 8 .6.7c1.4 1.6 9.3 4.2 15.2 4.2 11.1 0 17.8-5.5 17.7-14.6-.1-6.9-4.7-11-13.7-12.5zm34.7-16.9c-3.4 0-6.3.6-8.8 1.7l-.4.2L59 36.4l2.7-1.7c1.7-1.1 4.8-2.4 9.7-2.4 5.4 0 7.3 1.4 7.5 5.7h-2.4c-7.1 0-12.5 1.3-16.1 3.8-3.2 2.3-4.9 5.6-4.9 9.8 0 8.1 7 13.7 17.1 13.7h2c4.6 0 8.7-1.5 11.6-4.3s4.6-6.7 4.5-11.1v-9.2c.1-12.2-6.3-19-17.9-19zm6.1 25.5V50c0 1.7-.4 3-1.2 3.8-.8.8-2.2 1.2-4.1 1.2-2.2 0-5.8-.5-5.8-3.9 0-1.4.4-2.2 1.5-2.8 1.3-.8 3.7-1.2 7.1-1.2l2.5.1zm36.6-25.7c-13.2 0-19.1 9.2-19.1 18.2V57c0 4.4 3.4 7.6 8.1 7.6h4.1V40.4c0-4.9 2.3-7.9 6.2-7.9 4.8 0 7 2.7 7 8.6V57c0 4.5 3.4 7.6 8.4 7.6h3.8V40.2c-.2-11.2-7.5-18.7-18.5-18.7zm89.7-.1c-12.5 0-20.9 9.2-20.8 22.8 0 10.5 6.9 21.2 20 21.2 6.4 0 11.8-2.3 15.5-6.7 3.5-4.1 5.3-9.6 5.3-16 0-10.6-6.9-21.3-20-21.3zm7.5 22.7c0 3.1-.7 5.7-1.9 7.5-1.3 1.8-3.2 2.7-5.6 2.7-5.6 0-8.4-3.8-8.4-11.6 0-3.1.7-5.7 1.9-7.5 1.3-1.8 3.2-2.7 5.5-2.7 5.7-.1 8.5 3.9 8.5 11.6zm37.1-22.8c-12.5 0-20.9 9.2-20.8 22.8 0 10.5 6.9 21.2 20 21.2 12.5 0 20.9-9.1 20.8-22.7 0-10.6-6.9-21.3-20-21.3zm7.5 22.7c0 3.1-.7 10.2-7.5 10.2-5.6 0-8.4-3.8-8.4-11.6 0-6.4 2.8-10.3 7.5-10.3 5.6.1 8.4 4 8.4 11.7zM277.2 34.1c-4.3 0-6.6-3.4-6.6-6.8s2.3-6.8 6.6-6.8 6.6 3.4 6.6 6.8-2.3 6.8-6.6 6.8zm0-12.1c-3.5 0-5.1 2.8-5.1 5.3 0 2.6 1.6 5.3 5.1 5.3s5.1-2.8 5.1-5.3-1.6-5.3-5.1-5.3z" />
@@ -37,6 +40,9 @@
             </div>
 
             <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" onclick="toggleMobileMenu()" href="#products">Our products and services</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link active" onclick="toggleMobileMenu()" href="#approach">Our approach</a>
               </li>
@@ -67,22 +73,24 @@
     </div>
 
     <div class="container">
-      <section class="s-top-banner">
+      <section class="s-top-banner" id="products">
 
         <div class="row">
           <div class="col-12">
             <div class="d-flex flex-column flex-md-row s-shadow-xl">
               <div class="w-md-50">
-                <div class="s-top-banner__image" style="background-image: url('./images/img_01.gif');"></div>
+                <div class="s-top-banner__image" style="background-image: url('./images/img_01_a.gif');"></div>
               </div>
 
-              <div class="s-top-banner__text w-md-50 bg-col1 d-flex flex-column justify-content-center">
-                <p class="text-uppercase font-weight-bold">
+              <div class="s-top-banner__text w-md-50 bg-col8 d-flex flex-column justify-content-center">
+                <p class="text-left text-uppercase font-weight-bold">
                   Changing the way people and organisations
                   think and operate is challenging.
                 </p>
-                <div class="s-divider mt-1 mt-md-3 mb-3 mb-md-4 d-block clearfix"></div>
-                <p>
+                </p>
+                <!--<div class="s-divider mt-1 mt-md-3 mb-3 mb-md-4 d-block clearfix"></div>-->
+                </p>
+                <p class="text-left">
                   SANGOO products and services are designed to strengthen organisations
                   in facing this challenge.
                 </p>
@@ -108,34 +116,35 @@
             <a href="./inspiration.html"
               class="s-solutions__header d-block bg-col3 text-center text-white py-3 px-2 rounded mb-3">
               <span class="d-block">change</span>
-              <span class="h3 font-weight-bold">inspiration</span>
+              <span class="h4 font-weight-bold">inspiration</span>
             </a>
             <ul class="s-solutions__links">
-              <li><a href="">Keynote (change awareness)</a></li>
-              <li><a href="">Youtube</a></li>
-              <li><a href="">Bite size change tips in a box</a></li>
+              <li><a href="./inspiration.html#keynote">Keynote (change awareness)</a></li>
+              <li><a href="./inspiration.html#tricks">Bite size change tips in a box</a></li>
               <li><a href="">Assess your change!</a></li>
+              <li><a href="./inspiration.html#youtube">Youtube</a></li>
               </u>
           </div>
           <div class="col-md-4">
-            <div class="s-solutions__header bg-col2 text-center text-white py-3 px-2 rounded mb-3">
+            <a href="./experience.html"
+              class="s-solutions__header d-block bg-col4 text-center text-white py-3 px-2 rounded mb-3">
               <span class="d-block">change leadership</span>
-              <span class="h3 font-weight-bold">learning experiences</span>
-            </div>
+              <span class="h4 font-weight-bold">learning experiences</span>
+            </a>
             <ul class="s-solutions__links">
-              <li><a href="">Learning experience for executives</a></li>
-              <li><a href="">Learning experience for professionals</a></li>
-              <!-- <li><a href="">Sangoo c</a></li>-->
+              <li><a href="">Leading change for executives</a></li>
+              <li><a href="">Leading change for professionals</a></li>
+              <li><a href="">Building change engagement </a></li>
             </ul>
           </div>
           <div class="col-md-4">
-            <div class="s-solutions__header bg-col4 text-center text-white py-3 px-2 rounded mb-3">
+            <div class="s-solutions__header bg-col6 text-center text-white py-3 px-2 rounded mb-3">
               <span class="d-block">how to</span>
-              <span class="h3 font-weight-bold">embed Change</span>
+              <span class="h4 font-weight-bold">embed Change</span>
             </div>
             <ul class="s-solutions__links">
               <li><a href="">Sangoo Refresh</a></li>
-              <li><a href="">Sangoo Assesement</a></li>
+              <li><a href="">Sangoo Assessment</a></li>
               <li><a href="">Coaching & Consulting</a></li>
             </ul>
           </div>
@@ -154,14 +163,15 @@
           </div>
 
           <div class="row mb-4">
-            <div class="col-md-6 text-md-right text-center p-0 p-md-4">
-              <img class="" src="./images/icon_01.svg" alt="">
+            <div class="col-md-6 text-md-center text-center p-0 p-md-4">
+              <img class="" src="./images/icon_01bv2.svg" alt="">
             </div>
             <div class="col-md-6 p-5 p-md-4">
-              <h2 class="">It's about you</h2>
+              <h2 class="">supports your change</h2>
               <p>
-                Our products and services are designed to make YOU more efficient and effective at realizing change.
-                We strongly believe that the development of your organisation's change competences is a future proof
+                Our products and services are designed to make leaders and organisations more efficient and effective at
+                realizing change.
+                We strongly believe that the development of change competences is a future proof
                 choice to cope with the fast-paced changing world we live in.
               </p>
             </div>
@@ -169,44 +179,34 @@
 
           <div class="row flex-row-reverse flex-wrap-reverse flex-md-row flex-md-wrap mb-3">
             <div class="col-md-6 text-left text-md-right p-5 p-md-4">
-              <h2>It's about IQ and EQ</h2>
+              <h2>balances IQ & EQ </h2>
               <p>
                 People play a key role in achieving results. We are convinced that the right mix of ratio ( ensuring
                 process, performance indicators, governance,….) and emo ( taking the human psychology into account) is a
                 prerequisite to achieve sustainable changes. This balanced mix is part of all our products and services.
+
               </p>
             </div>
-            <div class="col-md-6 text-md-left text-center p-0 p-md-4">
-              <img class="" src="./images/icon_01.svg" alt="">
+            <div class="col-md-6 text-md-center text-center p-0 p-md-4">
+              <img class="" src="./images/icon_01d.svg" alt="">
             </div>
           </div>
 
           <div class="row mb-4">
-            <div class="col-md-6 text-md-right text-center p-0 p-md-4">
-              <img class="" src="./images/icon_01.svg" alt="">
+            <div class="col-md-6 text-md-center text-center p-0 p-md-4">
+              <img class="" src="./images/icon_01c.svg" alt="">
             </div>
             <div class="col-md-6 p-5 p-md-4">
-              <h2 class="">It’s about what works</h2>
+              <h2 class="">is based on what works</h2>
               <p>
                 We value academic evidence and research as a solid foundation but also know that the adoption in a real
                 life business context needs some translation. Therefore we deliver hands-on insights (no ivory tower
-                talk) based on real life experience and delivered in an experiential way (learning by doing).
+                talk) based on real life experience and delivered in an experiential and innovative way (learning by
+                doing).
               </p>
             </div>
           </div>
 
-          <div class="row flex-row-reverse flex-wrap-reverse flex-md-row flex-md-wrap mb-3">
-            <div class="col-md-6 text-left text-md-right p-5 p-md-4">
-              <h2>It's about you</h2>
-              <p>
-                It truly is. We are delighted when we contribute to making the difference for you. We strive for a
-                committed, long-term partnership with you.
-              </p>
-            </div>
-            <div class="col-md-6 text-md-left text-center p-0 p-md-4">
-              <img class="" src="./images/icon_01.svg" alt="">
-            </div>
-          </div>
 
         </section>
       </div>
@@ -219,20 +219,20 @@
           <div class="col-12">
             <div class="s-section-header">
               About us
-              <p class="s-section-header__subtitle text-center px-5">The SANGOO xperience was developed by ALVEARE. Our
-                goal is to strengthen organisations in addressing change and change leadership challenges.</p>
+              <p class="s-section-header__subtitle text-center px-5">The SANGOO xperience was developed by ALVEARE.
+                Change is our passion and expertise.</p>
             </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-12 mb-4">
+          <div class="col-12 mb-4 text-center">
             <img class="img-fluid" src="./images/els_en_stefaan.jpg" alt="">
           </div>
         </div>
 
         <div class="row mb-4">
-          <div class="col-md-6 px-5 py-2 p-md-5">
+          <div class="col-md-12 px-5 py-2 p-md-5">
             <h4 class="mb-4">Els Heylen</h4>
             <p>
               Els held several management positions in the banking and software industry. Realising change has been a
@@ -242,7 +242,7 @@
               often been a strong driver to bring along the much needed change.
             </p>
           </div>
-          <div class="col-md-6 px-5 pt-2 p-md-5">
+          <div class="col-md-12 px-5 pt-1 pb-0">
             <h4 class="mb-4">Stefaan Compernol</h4>
             <p>
               Change, people, process and technology form the core of Stefaan’s professional path. As a
@@ -256,69 +256,50 @@
       </section>
     </div>
 
-    <!-- Customers -->
-    <div class="bg-gray-100">
+    <!-- top stories-->
+
+    <div class="pb-7">
       <div class="container container--narrow">
-        <section id="contact" class="s-customers">
+        <section class="s-stories">
           <div class="row">
             <div class="col-12">
-              <div class="s-section-header">
-                Happy customers
-                <p class="s-section-header__subtitle text-center px-5">The SANGOO xperience was developed by ALVEARE.
-                  Our goal is to strengthen organisations in addressing change and change leadership challenges.</p>
+              <div class="s-section-header mt-2 mt-sm-3">Top Stories
               </div>
             </div>
           </div>
+          <style>
+            /* Customize story-grid here */
+            .story-container>div {
+              min-height: 160px;
+            }
 
+            .story-item-1 {
+              grid-column-start: 1;
+              grid-column-end: 3;
+              grid-row-start: 1;
+              grid-row-end: 3;
+              min-height: 250px;
+            }
+          </style>
           <div class="row">
-            <div class="col-12 mb-6">
-              <img class="img-fluid" src="./images/customers_update.png" alt="" />
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <div class="bg-col1-dark">
-      <div class="container container--narrow">
-        <section class="s-footer">
-
-          <div class="row">
-            <div class="col-12">
-              <div class="s-section-header text-white">
-                Lets talk
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 px-5">
-
-              <div class="w-md-50 m-auto">
-                <form name="contact-form" id="contact-form">
-                  <div class="form-group">
-                    <label for="email" class="d-block text-white">Your e-mail</label>
-                    <input class="form-control" id="email" name="from" type="text">
+            <div class="story-container">
+              <div class="story-item-1 bg-gray-100"
+                style="background-image: url('./images/testimonial_VPK.jpg'); background-size:cover">
+                <div class="s-story-over__header">VPK testimonial<div class="s-story-over__sub">Wim Naessens COO Paper
                   </div>
-                  <div class="form-group">
-                    <label for="textarea" class="d-block text-white">Anything you want us to know before we get in touch
-                      with you?</label>
-                    <textarea class="form-control" id="textarea" name="remarks" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block smb-2">Send</button>
-                </form>
+                </div>
               </div>
-
-              <div>
-
+              <div class="story-item-2 bg-gray-300"
+                style="background-image: url('./images/grid_video_4.jpg'); background-size:cover">
+                <div class="s-story-over__square">VIDEO TIP #4</div>
               </div>
-            </div>
-          </div>
-
-          <div class="row mt-6">
-            <div class="col-12 mb-6 text-center">
-              <small class="text-white">Sangoo is a registered trademark of ALVEARE bvba</small>
+              <div class="story-item-3 bg-gray-300">
+                style="background-image: url('./images/grid_video_05.jpg'); background-size:cover">
+                <div class="s-story-over__square">VIDEO TIP #5</div>
+              </div>
+              <div class="story-item-4 bg-gray-100"></div>
+              <div class="story-item-5 bg-gray-300"></div>
+              <div class="story-item-6 bg-gray-100"></div>
             </div>
           </div>
         </section>
@@ -326,7 +307,7 @@
     </div>
 
   </main>
-
+  ${require('./partials/footer.html')}
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
