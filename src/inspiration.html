@@ -50,7 +50,7 @@
                 <a class="nav-link" onclick="toggleMobileMenu()" href="#">Embed change</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" onclick="toggleMobileMenu()" href="#">contact</a>
+                <a class="nav-link" onclick="toggleMobileMenu()" href="#contact">contact</a>
               </li>
             </ul>
           </div>
@@ -179,41 +179,67 @@
 
    
     <!-- Top stories -->
+
     <div class="pb-7">
-      <div class="container pr-0 container--narrow ">
+      <div class="container container--narrow">
         <section class="s-stories">
           <div class="row">
             <div class="col-12">
-              <div class="s-section-header">Top Stories
+              <div class="s-section-header mt-5 mt-sm-3">Top Stories
               </div>
             </div>
           </div>
           <style>
-            
-            /* Customize story-grid here */
-            .story-container>div {
-            
-             
+            /* Customize story-grid here (only positioning)*/
+            .s-story-container>a {
+              min-height: 160px;
             }
 
-            .story-item-1 {
+            .s-story-grid-item-1 {
               grid-column-start: 1;
               grid-column-end: 3;
               grid-row-start: 1;
               grid-row-end: 3;
-              min-height: 250px;
             }
-                
-            
           </style>
           <div class="row">
-            <div class="story-container">
-              <div class="story-item-1 bg-gray-100" style="background-image: url('./images/testimonial_VPK.jpg'); background-size:cover"> <div class="s-story-over__header">VPK testimonial<div class="s-story-over__sub">Wim Naessens COO Paper</div></div></div>
-              <div class="story-item-2 bg-gray-300" style="background-image: url('./images/testimonial_VPK.jpg'); background-size:cover"></div>
-              <div class="story-item-3 bg-gray-300" style="background-image: url('./images/testim_participants.jpg'); background-size:cover"><div class="s-story-over__square_orange">participants testify</div></div></a>
-              <div class="story-item-4 bg-gray-100" style="background-image: url('./images/box3.png'); background-size:cover"><div class="s-story-over__rect"></div></div></a>
-              <div class="story-item-5 bg-gray-300" style="background-image: url('./images/'); background-size:cover"><div class="s-story-over__square_yellow">SHORT READ: the hot potato </div></div>
-              <div class="story-item-6 bg-gray-300" style="background-image: url('./images/grid_video_4.jpg'); background-size:cover"><div class="s-story-over__square_blue">CHANGE tip #4 <p></p></div></div></a>
+            <div class="s-story-container">
+              <a href="https://www.youtube.com/watch?v=jrCPHA0MeT0" target="_blank"
+                class="s-story s-story--lg s-story-grid-item-1"
+                style="background-image: url('./images/testimonial_VPK.jpg'); background-size:cover">
+
+                <div class="s-story__title">VPK testimonial</div>
+                <div class="s-story__subtitle">Wim Naessens COO Paper</div>
+              </a>
+
+              <a  href="https://www.youtube.com/watch?v=-n7JNOLzLQg&t=4s" target="_blank"
+               href="" target="_blank"class="s-story s-story--sm s-story-grid-item-2"
+                style="background-image: url('./images/testimonial_participants.jpg'); background-size:cover">
+                <div class="s-story__title">PARTICIPANTS testify</div>
+              </a>
+
+              <a class="s-story s-story--sm s-story-grid-item-3"
+                style="background-image: url('./images/grid_video_05.png'); background-size:cover">
+                <div class="s-story__title">VIDEO TIP #4</div>
+                <div class="s-story__subtitle">The 666 communication pitfall</div>
+              </a>
+
+              <a class="s-story s-story--sm s-story-grid-item-3"
+                style="background-image: url('./images/reading.jpg'); background-size:cover">
+                <div class="s-story__title font-red">READING TIP</div>
+                <div class="s-story__subtitle">On change communication</div>
+
+              </a>
+              <a class="s-story s-story--sm s-story-grid-item-3"
+                style="background-image: url('./images/grid_video_05.png'); background-size:cover">
+                <div class="s-story__title">VIDEO TIP #4</div>
+              </a>
+
+              <a class="s-story s-story--sm s-story-grid-item-3"
+                style="background-image: url('./images/grid_video_05.png'); background-size:cover">
+                <div class="s-story__title">VIDEO TIP #4</div>
+              </a>
+
 
             </div>
           </div>
