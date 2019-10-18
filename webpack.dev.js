@@ -124,6 +124,11 @@ module.exports = {
       template: './src/inspiration.html',
       // inject: 'body',
     }),
+    new HtmlWebpackPlugin ({
+      filename: 'sangooe.html',
+      template: './src/sangooe.html',
+      // inject: 'body',
+    }),
     new CopyWebpackPlugin ([
       {
         from: 'src/assets/images',
