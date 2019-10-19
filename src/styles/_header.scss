@@ -52,6 +52,47 @@
         top: 100%;
     }
 }
+.s-intro-background-testimonial {
+        position: absolute;
+        z-index: -2;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 60vh;
+        max-height: 550px;
+        overflow: hidden;
+        background: linear-gradient(180deg, #F9F9F9, #F1F1F1);
+        display: none;
+        @media (min-width: $breakpoint-sm) {
+            display: block;
+        }
+    
+        .skewed-box {
+            position: absolute;
+            width: 300px;
+            height: 600px;
+            z-index: -1;
+            right: -60px;
+            transform: skew(0, 30deg) rotate(200deg);
+            top: -230px;
+            background: linear-gradient(0deg, #005f8f1f, #F1F1F1);
+            border-radius: 10px;
+    
+        }
+    
+        .white-corner {
+            background: white;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            z-index: -1;
+            right: 0;
+            transform: translateY(-100px) translateX(100px) rotate(45deg);
+            top: 100%;
+        }
+
+
+}
 
 // NAVIGATION
 .nav {
