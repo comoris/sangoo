@@ -134,6 +134,11 @@ module.exports = {
       template: './src/testimonial_vpk.html',
       // inject: 'body',
     }),
+    new HtmlWebpackPlugin ({
+      filename: 'sangoop.html',
+      template: './src/sangoop.html',
+      // inject: 'body',
+    }),
     new CopyWebpackPlugin ([
       {
         from: 'src/assets/images',
