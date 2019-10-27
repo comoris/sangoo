@@ -1,9 +1,10 @@
-const path = require ('path');
+const path = require('path');
 
-const HtmlWebpackPlugin = require ('html-webpack-plugin');
-const CopyWebpackPlugin = require ('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const buildPath = path.resolve (__dirname, 'dist');
+const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
@@ -15,14 +16,13 @@ module.exports = {
   },
   devServer: {
     port: 8080,
-    contentBase: path.join (__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'dist'),
   },
   node: {
     fs: 'empty',
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js$/,
         exclude: /node_modules/,
         // This package allows transpiling JavaScript files using Babel and webpack.
@@ -33,32 +33,20 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-        use: [
-          {
-            // Adds CSS to the DOM by injecting a <style> tag
-            // creates style nodes from JS strings
-            loader: 'style-loader',
+        use: [{
+            loader: MiniCssExtractPlugin.loader,
             options: {
-              sourceMap: true,
+              publicPath: (resourcePath, context) => {
+                // publicPath is the relative path of the resource to the context
+                // e.g. for ./css/admin/main.css the publicPath will be ../../
+                // while for ./css/main.css the publicPath will be ../
+                return path.relative(path.dirname(resourcePath), context) + '/';
+              },
             },
           },
-          {
-            // translates CSS into CommonJS
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-          {
-            // compiles Sass to CSS
-            loader: 'sass-loader',
-            options: {
-              outputStyle: 'expanded',
-              sourceMap: true,
-              sourceMapContents: true,
-            },
-          },
-          // Please note we are not running postcss here
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
         ],
       },
       // {
@@ -98,7 +86,7 @@ module.exports = {
       // },
       {
         test: /\.(html)$/,
-        include: path.join (__dirname, './src/partials'),
+        include: path.join(__dirname, './src/partials'),
         use: {
           loader: 'html-loader',
           options: {
@@ -109,41 +97,41 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin ({
+    new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html',
       // inject: 'body',
     }),
-    new HtmlWebpackPlugin ({
+    new HtmlWebpackPlugin({
       filename: 'experience.html',
       template: './src/experience.html',
       // inject: 'body',
     }),
-    new HtmlWebpackPlugin ({
+    new HtmlWebpackPlugin({
       filename: 'inspiration.html',
       template: './src/inspiration.html',
       // inject: 'body',
     }),
-    new HtmlWebpackPlugin ({
+    new HtmlWebpackPlugin({
       filename: 'sangooe.html',
       template: './src/sangooe.html',
       // inject: 'body',
     }),
-    new HtmlWebpackPlugin ({
+    new HtmlWebpackPlugin({
       filename: 'testimonial_vpk.html',
       template: './src/testimonial_vpk.html',
       // inject: 'body',
     }),
-    new HtmlWebpackPlugin ({
-      filename: 'sangoop.html',
-      template: './src/sangoop.html',
-      // inject: 'body',
+    new CopyWebpackPlugin([{
+      from: 'src/assets/images',
+      to: 'images',
+    }, ]),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // all options are optional
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+      ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
-    new CopyWebpackPlugin ([
-      {
-        from: 'src/assets/images',
-        to: 'images',
-      },
-    ]),
   ],
 };
