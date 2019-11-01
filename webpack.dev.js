@@ -8,11 +8,13 @@ const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
-  entry: './src/js/index.js',
+  entry: {
+    main: './src/js/index.js',
+  },
   output: {
     filename: '[name].js',
     path: buildPath,
-    filename: 'bundle.js',
+    filename: '[name].js',
   },
   devServer: {
     port: 8080,
