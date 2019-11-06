@@ -122,6 +122,21 @@ module.exports = {
       template: './src/testimonial_vpk.html',
       // inject: 'body',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'sangoop.html',
+      template: './src/sangoop.html',
+      // inject: 'body',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'reading1.html',
+      template: './src/reading001.html',
+      // inject: 'body',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'sangootandt.html',
+      template: './src/sangootandt.html',
+      // inject: 'body',
+    }),
     new CopyWebpackPlugin([{
       from: 'src/assets/images',
       to: 'images',
