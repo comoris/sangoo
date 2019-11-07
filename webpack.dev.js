@@ -115,8 +115,8 @@ module.exports = {
       // inject: 'body',
     }),
     new HtmlWebpackPlugin({
-      filename: 'sangooe.html',
-      template: './src/sangooe.html',
+      filename: 'sangood.html',
+      template: './src/sangood.html',
       // inject: 'body',
     }),
     new HtmlWebpackPlugin({
