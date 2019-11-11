@@ -130,7 +130,7 @@ module.exports = {
       // inject: 'body',
     }),
     new HtmlWebpackPlugin({
-      filename: 'reading1.html',
+      filename: 'reading001.html',
       template: './src/reading001.html',
       // inject: 'body',
     }),
