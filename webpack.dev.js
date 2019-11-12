@@ -139,6 +139,11 @@ module.exports = {
       template: './src/sangootandt.html',
       // inject: 'body',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'evaluation.html',
+      template: './src/evaluation.html',
+      // inject: 'body',
+    }),
     new CopyWebpackPlugin([{
       from: 'src/assets/images',
       to: 'images',
