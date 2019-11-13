@@ -135,6 +135,11 @@ module.exports = {
       // inject: 'body',
     }),
     new HtmlWebpackPlugin({
+      filename: 'reading002.html',
+      template: './src/reading002.html',
+      // inject: 'body',
+    }),
+    new HtmlWebpackPlugin({
       filename: 'sangootandt.html',
       template: './src/sangootandt.html',
       // inject: 'body',
