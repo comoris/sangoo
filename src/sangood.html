@@ -10,7 +10,11 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+  
+    <!-- Icons (Apple default iPhone icon 57x57px) -->
+    <link rel="shortcut icon" href="./images/sangoo.ico" />
+  
+    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 
@@ -151,7 +155,7 @@
           </div>
           <div class="text-left mb-5 mb-sm-5 mt-5 ">
             <button type="button" class="s-arrow-link btn btn-light">
-              <a href="">
+              <a href="./CLF.html">
                 <span class="s-arrow-text pl-2">discover the framework</span>
                 <svg class="s-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <path d="M0 0h24v24H0z" fill="none" />
@@ -168,77 +172,100 @@
 
 
 
+ <!-- Top stories - Flavour 3 of the grid -->
 
-    <!-- Top stories -->
-    <div class="pb-7">
-      <div class="container container--narrow">
-        <section class="s-stories">
-          <div class="row">
-            <div class="col-12">
-              <div class="s-section-header mt-5 mt-sm-3">Top Stories
-              </div>
+ <div class="pb-7">
+    <div class="container container--narrow">
+      <section class="s-stories">
+        <div class="row">
+          <div class="col-12">
+            <div class="s-section-header mt-2 mt-sm-3">Discover
             </div>
           </div>
-          <style>
-            /* Customize story-grid here (only positioning)*/
-            .s-story-container>a {
-              min-height: 160px;
-            }
+        </div>
+<style>
+ /* Customize story-grid here (only positioning)*/
+  .s-story-container>a {
+    min-height: 160px;
+  }
 
-            .s-story-grid-item-1 {
-              grid-column-start: 1;
-              grid-column-end: 3;
-              grid-row-start: 1;
-              grid-row-end: 3;
-            }
-          </style>
-          <div class="row">
-            <div class="s-story-container">
-              <a href="https://www.youtube.com/watch?v=jrCPHA0MeT0" target="_blank"
-                class="s-story s-story--lg s-story-grid-item-1"
-                style="background-image: url('./images/grid_testimonial_participants.jpg'); background-size:cover">
+  .s-story-grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+</style>
+<div class="row">
+  <div class="s-story-container">
 
-                <div class="s-story__title">Participants testify</div>
-                <div class="s-story__subtitle">about sangoo e</div>
-              </a>
+      <a class="s-story s-story--sm s-story-grid-item-1"
+      style="background-image: url('./images/testimonial_TARKETT.jpg'); background-size:cover">
+      <div class="s-story__title">TARKETT testimonial</div>
+      <div class="s-story__subtitle">Wim Van Medegael</div>
+    </a>
 
-              <a href="https://www.youtube.com/watch?v=-n7JNOLzLQg&t=4s" target="_blank" href="" target="_blank"
-                class="s-story s-story--sm s-story-grid-item-2"
-                style="background-image: url('./images/grid_reading_tip.jpg'); background-size:cover">
-                <div class="s-story__title">READING tip</div>
-              </a>
+    <a href="./sangootandt.html" target="_blank"
+      class="s-story s-story--sm s-story-grid-item-3"
+      style="background-image: url('./images/grid_ttbox.jpg'); background-size:cover">
 
-              <a class="s-story s-story--sm s-story-grid-item-3"
-                style="background-image: url('./images/grid_cyan.png'); background-size:cover">
-                <div class="s-story__title">91/100</div>
-                <div class="s-story__subtitle">Overall evaluation by participants</div>
-              </a>
+      <div class="s-story__title">ChHANGE INSPIRATION</div>
+      
+    </a>
 
-              <a class="s-story s-story--sm s-story-grid-item-3"
-                style="background-image: url('./images/grid_cyan.png'); background-size:cover">
-                <div class="s-story__title font-red">91/100</div>
-                <div class="s-story__subtitle">Overall evaluation by participants</div>
-
-              </a>
-              <a class="s-story s-story--sm s-story-grid-item-3"
-                style="background-image: url('./images/grid_video_05.png'); background-size:cover">
-                <div class="s-story__title">VIDEO TIP #4</div>
-              </a>
-
-              <a class="s-story s-story--sm s-story-grid-item-3"
-                style="background-image: url('./images/grid_video_05.png'); background-size:cover">
-                <div class="s-story__title">VIDEO TIP #4</div>
-              </a>
+    <a  href="https://www.youtube.com/watch?v=-n7JNOLzLQg&t=4s" target="_blank"
+     href="" target="_blank"class="s-story s-story--sm s-story-grid-item-2"
+      style="background-image: url('./images/grid_reading_tip.jpg'); background-size:cover">
+      <div class="s-story__title">SUGGESTED READING</div>
+    </a>
 
 
-            </div>
-          </div>
-        </section>
+    <a class="s-story s-story--sm s-story-grid-item-3 video-btn" data-toggle="modal"
+    style="background-image: url('./images/grid_video_els.png'); background-size:cover"
+    data-src="https://www.youtube.com/embed/qaX8NHkup4Y" data-target="#myModal">
+    <div class="s-story__title">CHANGE TIP Nr. 7</div>
+    </a>
+
+    <a class="s-story s-story--sm s-story-grid-item-3 video-btn" data-toggle="modal"
+    style="background-image: url('./images/grid_testimonial_participants.jpg'); background-size:cover"
+    data-src="https://www.youtube.com/embed/-n7JNOLzLQg" data-target="#myModal">
+    <div class="s-story__title">PARTICIPANTS TESTIFY</div>
+    </a>
+    
+    <a href="./evaluation.html" class="s-story s-story--sm s-story-grid-item-3"
+    style="background-image: url('./images/grid_participants_score.png'); background-size:cover">
+    <div class="s-story__title">participants' score</div>
+    </a>
+
+
+
+ 
+        
+
+
+        </div>
       </div>
-    </div>
-  </main>
+    </section>
+  </div>
+</div>
+</div>
+</main>
 
-  ${require('./partials/footer.html')}
+${require('./partials/footer.html')}
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+   
 </body>
 
 </html>
