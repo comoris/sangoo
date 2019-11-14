@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 var helper = require('sendgrid').mail;
 var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 
-const CONTACT_ADDRESS = 'joriscompernol@solenoid.be';
+const CONTACT_ADDRESS = 'sangoo@alveare-change.com';
 
 app.use(cors())
 app.use(express.static(path.join(__dirname, 'dist')))
