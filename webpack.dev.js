@@ -154,6 +154,11 @@ module.exports = {
       template: './src/CLF.html',
       // inject: 'body',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'sangooc.html',
+      template: './src/sangooc.html',
+      // inject: 'body',
+    }),
     new CopyWebpackPlugin([{
       from: 'src/assets/images',
       to: 'images',
