@@ -16,7 +16,7 @@ app.post('/contact', (req, res) => {
 
     var from_email = new helper.Email(req.body.from);
     var to_email = new helper.Email(CONTACT_ADDRESS);
-    var subject = 'New messeage from website';
+    var subject = 'New message from website';
     var content = new helper.Content('text/plain', req.body.remarks);
     var mail = new helper.Mail(from_email, subject, to_email, content);
 
