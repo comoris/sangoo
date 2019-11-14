@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>The Framework</title>
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+  <!-- Icons (Apple default iPhone icon 57x57px) -->
+  <link rel="shortcut icon" href="./images/sangoo.ico" />
+
+    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+
+<body>
+  <div class="s-header" id="mainNav">
+    <div class="s-navbar">
+      <div class="container">
+        <div class="row">
+          <div class="s-nav-wrapper d-flex flex-fill justify-content-between align-items-center">
+            <div class="s-logo" href="">
+              <svg viewBox="0 0 300 90">
+                <path
+                  d="M161 21.4c-12.6 0-21.4 8.9-21.4 21.5 0 10 7.5 17.2 17.7 17.2 4 0 7.2-1.4 9.2-3.4V58c-.5 6-3 8.2-9.3 8.2-3.4 0-5.1-.6-7.5-1.8l-1-.5-4.6 9.2.6.6c1.7 1.5 7.4 3.7 13.2 3.7 14.1 0 20.3-10.1 20.3-20.1V40c.2-11.1-6.8-18.6-17.2-18.6zm5.3 19.2c0 2.8-.7 5.1-2.1 6.7-1.3 1.5-3.1 2.3-5.3 2.3-4 0-6.8-3.3-6.8-7.9 0-5.3 3.3-9.2 7.9-9.2 4-.1 6.3 2.9 6.3 8.1zm-128.2-2C31 37.5 31 36.7 31 35.8s0-3.4 6.9-3.4c2.9 0 5.9.7 8.3 1.8l1.9.9L46.4 24l-.5-.3c-2.4-1.4-5.4-2.1-9-2.1-10.3 0-18.1 6.5-18 15 0 6.6 4.4 10.4 13.5 11.7 7.4 1 7.4 2.2 7.4 3.3s-.4 1.8-1.3 2.4c-1 .6-2.7.9-4.9.9-2.7 0-5.9-.7-8.4-1.8l-.8-.3-6.1 8 .6.7c1.4 1.6 9.3 4.2 15.2 4.2 11.1 0 17.8-5.5 17.7-14.6-.1-6.9-4.7-11-13.7-12.5zm34.7-16.9c-3.4 0-6.3.6-8.8 1.7l-.4.2L59 36.4l2.7-1.7c1.7-1.1 4.8-2.4 9.7-2.4 5.4 0 7.3 1.4 7.5 5.7h-2.4c-7.1 0-12.5 1.3-16.1 3.8-3.2 2.3-4.9 5.6-4.9 9.8 0 8.1 7 13.7 17.1 13.7h2c4.6 0 8.7-1.5 11.6-4.3s4.6-6.7 4.5-11.1v-9.2c.1-12.2-6.3-19-17.9-19zm6.1 25.5V50c0 1.7-.4 3-1.2 3.8-.8.8-2.2 1.2-4.1 1.2-2.2 0-5.8-.5-5.8-3.9 0-1.4.4-2.2 1.5-2.8 1.3-.8 3.7-1.2 7.1-1.2l2.5.1zm36.6-25.7c-13.2 0-19.1 9.2-19.1 18.2V57c0 4.4 3.4 7.6 8.1 7.6h4.1V40.4c0-4.9 2.3-7.9 6.2-7.9 4.8 0 7 2.7 7 8.6V57c0 4.5 3.4 7.6 8.4 7.6h3.8V40.2c-.2-11.2-7.5-18.7-18.5-18.7zm89.7-.1c-12.5 0-20.9 9.2-20.8 22.8 0 10.5 6.9 21.2 20 21.2 6.4 0 11.8-2.3 15.5-6.7 3.5-4.1 5.3-9.6 5.3-16 0-10.6-6.9-21.3-20-21.3zm7.5 22.7c0 3.1-.7 5.7-1.9 7.5-1.3 1.8-3.2 2.7-5.6 2.7-5.6 0-8.4-3.8-8.4-11.6 0-3.1.7-5.7 1.9-7.5 1.3-1.8 3.2-2.7 5.5-2.7 5.7-.1 8.5 3.9 8.5 11.6zm37.1-22.8c-12.5 0-20.9 9.2-20.8 22.8 0 10.5 6.9 21.2 20 21.2 12.5 0 20.9-9.1 20.8-22.7 0-10.6-6.9-21.3-20-21.3zm7.5 22.7c0 3.1-.7 10.2-7.5 10.2-5.6 0-8.4-3.8-8.4-11.6 0-6.4 2.8-10.3 7.5-10.3 5.6.1 8.4 4 8.4 11.7zM277.2 34.1c-4.3 0-6.6-3.4-6.6-6.8s2.3-6.8 6.6-6.8 6.6 3.4 6.6 6.8-2.3 6.8-6.6 6.8zm0-12.1c-3.5 0-5.1 2.8-5.1 5.3 0 2.6 1.6 5.3 5.1 5.3s5.1-2.8 5.1-5.3-1.6-5.3-5.1-5.3z" />
+                <path
+                  d="M279.6 29.8l-.5-1.3c-.2-.5-.5-.8-.8-1 .4-.1.7-.3 1-.6.3-.3.4-.7.4-1.2 0-.6-.2-1-.6-1.4s-.9-.5-1.6-.5h-.8c-.3 0-.6 0-1 .1s-.6.1-.8.2v5.7c0 .3.1.5.2.7.2.2.4.2.7.2h.4V28c.1 0 .3 0 .7.1.1 0 .2 0 .3.1.1 0 .1.1.2.1.1.1.2.1.2.2.1.1.1.3.2.4l.5 1.2c.2.4.5.6 1 .6h.4c.1 0 .2-.1.2-.2-.1-.3-.3-.6-.3-.7zm-2.4-2.9c-.4 0-.8 0-1-.1V25c.2 0 .4-.1.6-.1h.4c.3 0 .6.1.8.2.2.1.3.4.3.8 0 .3-.1.5-.3.7-.3.2-.5.3-.8.3z" />
+              </svg>
+            </div>
+
+            <div class="s-burger-box" href="javascript:void(0);" class="nav-link icon" onclick="toggleMobileMenu()">
+              <div class="s-burger"></div>
+            </div>
+
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" onclick="toggleMobileMenu()" href="./">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="toggleMobileMenu()" href="./inspiration.html">Inspiration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="toggleMobileMenu()" href="./experience.html">Learning experiences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="toggleMobileMenu()" href="#">Embed change</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="toggleMobileMenu()" href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+
+    <!-- introductie blok-->
+    <div class="s-intro-background-testimonial">
+      <div class="white-corner"></div>
+      <div class="container position-relative">
+        <div class="skewed-box"></div>
+      </div>
+    </div>
+
+    <div class="container container--narrow">
+      <section class="s-top-banner">
+
+        <div class="row">
+          <div class="col-12 text-left mb-md-5">
+            <h1 class="mb-4">The Change Leadership Framework (CLF)</h1>
+            <p class="">
+                The Change Leadership Framework (CLF) is the backbone of our approach. It combines different key aspects around change in a hands-on ready to use roadbook.  
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-white ">
+        <div class="container container--narrow">
+          <!--framework details-->
+       
+            <div class="row flex-row flex-wrap flex-md-row flex-md-wrap">
+              <div class="col-md-6 text-center pl-4 pr-4 pb-0 mb-4">
+                <img class="mt-md-5 mt-sm-4 responsive-img-sm img-fluid p-md-2" src="./images/CLF_example.jpg" alt="">
+              </div>
+              <div class="col-md-6 text-left pl-4 pr-4 pb-0 mb">
+                <h4 class="mb-md-3 mt-md-5">The right mix for successful change</h4>
+                <p class="">
+                  Being successful at realizing change requires an approach that balances 'IQ' and 'EQ' aspects. IQ refers to: the phases in a change trajectory, the measurement points, co-creation techniques, governance, .... EQ refers to the human side of change: the psychology of change, the different views on change, cultural elements, key change beliefs....
+              </div>
+              <div class="col-md-12 text-justify ml-0 mr-0 mb-md-3 mt-md-4 pl-4 pr-4 pb-0 mb-4">
+                  <h4 class="mb-md-3">Hands-on</h4>
+
+                The CLF packs these elements in a structured and hands-on roadbook. A roadbook that provides an answer to the question "What should I do to be more successful at change?". Psychological concepts are shaped into tools and tips, ready to use within a business context. The IQ elements are worked out to the level of a pragmatic checklist ("What should I think of?").
+  
+              </div>
+            </div>
+            
+     
+            <div class="row flex-row-reverse flex-wrap-reverse flex-md-row flex-md-wrap">
+              <div class="col-md-6 text-left pl-4 pr-4 pb-0">
+                <h4 class="mb-md-3 mt-md-5">A common language</h4>
+                <p>
+                    All different SANGOO flavours have this backbone in common. As a result, a shared change language and approach is built throughout the different layers of your organisation. All involved will talk the same change language, minimizing the possibility of miscommunication. 
+                </p>
+              </div>
+  
+              <div class="col-md-6 text-center p-0 p-md-4">
+                <img class="mt-md-5 mb-5 mb-md-0 responsive-img-sm img-fluid" src="./images/" alt="">
+              </div>
+            </div>
+          </div>
+          
+            <div class="bg-gray-100 mt-5 ">
+                <div class="container container--narrow">
+                    <div class="row flex-row flex-wrap-reverse flex-md-row flex-md-wrap">
+              
+                      <div class="col-md-12 text-justify mt-md-4 mb-4">
+                          <h4 class="pb-3">The origin of the framework</h4>
+                      <p>              The Change Leadership framework embodies our Evidence Based approach. It combines extensive hands-on experience, leading change research findings (Kotter, Senge, Haidt, Heath, Beer, Decaluwe, Nohria, Thaler, Kahneman, ...) and proven 'best practices'.
+                        </p>
+                        </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+          
+        <div class="bg-white ">
+            <div class="container container--narrow">
+            <div class="col-md-12 text-justify ml-0 mr-0 mb-md-3 mt-md-4 mb-4">
+                <h4 class="mb-md-3">The essence</h4>
+
+                No ivory tower theory but ready to use knowledge, tips and tricks that enable to shape and realize your change with a better understanding of the human psychology that comes to play. 
+            </div>
+          </div>
+         
+        
+  
+      </div>
+     
+
+
+    <!-- top stories - FLAVOUR 1 of the grid-->
+
+<div class="pb-7">
+<div class="container container--narrow">
+  <section class="s-stories">
+    <div class="row">
+      <div class="col-12">
+        <div class="s-section-header mt-2 mt-sm-5">Discover
+        </div>
+      </div>
+    </div>
+    <style>
+      /* Customize story-grid here (only positioning)*/
+      .s-story-container>a {
+        min-height: 160px;
+      }
+
+      .s-story-grid-item-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+    </style>
+    <div class="row">
+      <div class="s-story-container">
+        <a href="./testimonial_vpk.html" target="_blank" class="s-story s-story--lg s-story-grid-item-1"
+          style="background-image: url('./images/testimonial_VPK.jpg'); background-size:cover">
+
+          <div class="s-story__title">VPK testimonial</div>
+          <div class="s-story__subtitle">Wim Naessens COO Paper</div>
+        </a>
+
+        <a href="./sangootandt.html" class="s-story s-story--sm s-story-grid-item-2"
+          style="background-image: url('./images/grid_ttbox.jpg'); background-size:cover">
+          <div class="s-story__title">CHANGE INSPIRATION</div>
+        </a>
+
+        <a href="./reading001.html" class="s-story s-story--sm s-story-grid-item-3"
+          style="background-image: url('./images/grid_reading_tip.jpg'); background-size:cover">
+          <div class="s-story__title">SUGGESTED READING</div>
+        </a>
+        <a class="s-story s-story--sm s-story-grid-item-3 video-btn" data-toggle="modal"
+        style="background-image: url('./images/grid_video_05.png'); background-size:cover"
+        data-src="https://www.youtube.com/embed/v7pXVVeEgTM" data-target="#myModal">
+        <div class="s-story__title">CHANGE TIP Nr. 3</div>
+        </a>
+
+        <a class="s-story s-story--sm s-story-grid-item-3 video-btn" data-toggle="modal"
+        style="background-image: url('./images/grid_sangooexplained.jpg'); background-size:cover"
+        data-src="https://www.youtube.com/embed/Ok-D8LlFKbI" data-target="#myModal">
+        <div class="s-story__title">INTRO - 90 secs</div>
+        </a>
+        
+          <a href="./evaluation.html" class="s-story s-story--sm s-story-grid-item-3"
+        style="background-image: url('./images/grid_participants_score.png'); background-size:cover">
+        <div class="s-story__title">participants' score</div>
+      </a>
+
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+
+</main>
+
+
+
+${require('./partials/footer.html')}
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+</body>
+
+</html>

@@ -42,7 +42,9 @@ module.exports = {
                 // publicPath is the relative path of the resource to the context
                 // e.g. for ./css/admin/main.css the publicPath will be ../../
                 // while for ./css/main.css the publicPath will be ../
-                return path.relative(path.dirname(resourcePath), context) + '/';
+                return (
+                  path.relative(path.dirname(resourcePath), context) + '/'
+                );
               },
             },
           },
@@ -130,13 +132,33 @@ module.exports = {
       // inject: 'body',
     }),
     new HtmlWebpackPlugin({
-      filename: 'reading1.html',
+      filename: 'reading001.html',
       template: './src/reading001.html',
+      // inject: 'body',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'reading002.html',
+      template: './src/reading002.html',
       // inject: 'body',
     }),
     new HtmlWebpackPlugin({
       filename: 'sangootandt.html',
       template: './src/sangootandt.html',
+      // inject: 'body',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'evaluation.html',
+      template: './src/evaluation.html',
+      // inject: 'body',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'CLF.html',
+      template: './src/CLF.html',
+      // inject: 'body',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'sangooc.html',
+      template: './src/sangooc.html',
       // inject: 'body',
     }),
     new CopyWebpackPlugin([{
