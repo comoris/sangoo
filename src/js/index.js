@@ -1,5 +1,7 @@
 import '../styles/styles.scss';
 
+import './formlogic';
+
 // url-loader test
 // import pinIcon from '../assets/images/pin.png';
 // var pinImg = document.getElementById('pin');
@@ -49,31 +51,6 @@ window.addEventListener('scroll', e => {
   }
   lastScroll = ws <= 0 ? 0 : ws;
 });
-
-const form = document.querySelector('form');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    const formData = new FormData(e.target);
-    const json = JSON.stringify({
-      from: formData.get('from'),
-      remarks: formData.get('remarks')
-    })
-
-    fetch('https://sangoo.herokuapp.com/contact', {
-        method: 'post',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: json,
-      })
-      .then(() => {
-        document.getElementsByName('contact-form')[0].reset();
-      })
-      .catch(error => console.error(error));
-
-    e.preventDefault()
-  });
-}
 
 
 $(document).ready(function () {

@@ -8,6 +8,7 @@ var helper = require('sendgrid').mail;
 var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 
 const CONTACT_ADDRESS = 'sangoo@alveare-change.com';
+// const CONTACT_ADDRESS = 'joriscompernol@solenoid.be';
 
 app.use(cors())
 app.use(express.static(path.join(__dirname, 'dist')))
@@ -17,7 +18,7 @@ app.post('/contact', (req, res) => {
     var from_email = new helper.Email(req.body.from);
     var to_email = new helper.Email(CONTACT_ADDRESS);
     var subject = 'New message from website';
-    var content = new helper.Content('text/plain', req.body.remarks);
+    var content = new helper.Content('text/html', parseBodyToHtml(req.body));
     var mail = new helper.Mail(from_email, subject, to_email, content);
 
     var request = sg.emptyRequest({
@@ -38,6 +39,13 @@ app.post('/contact', (req, res) => {
 });
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
+function parseBodyToHtml(obj) {
+    let str = '';
+    for (i in obj) {
+        str += i + ': ' + obj[i] + '</br>';
+    }
+    return str;
+}
 
 // https://medium.com/datafire-io/simple-backends-four-ways-to-implement-a-contact-us-form-on-a-static-website-10fc430984a4
 // https://sendgrid.com/blog/sending-email-nodemailer-sendgrid/
