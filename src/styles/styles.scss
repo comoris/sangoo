@@ -10,119 +10,138 @@
 @import './modal.scss';
 
 .s-top-banner {
-    padding-top: 70px;
+  padding-top: 70px;
+  font-size: 1.2rem;
+
+  @media (min-width: $breakpoint-sm) {
+    padding-top: 160px;
+    min-height: 280px;
+    font-size: 1.2rem;
+  }
+
+  &__image {
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 180px;
+
+    @media (min-width: $breakpoint-md) {
+      min-height: 380px;
+    }
+  }
+
+  &__text {
+    padding: 2em;
     font-size: 1.2rem;
 
-    @media(min-width: $breakpoint-sm) {
-        padding-top: 160px;
-        min-height: 280px;
-        font-size: 1.2rem;
+    @media (min-width: $breakpoint-md) {
+      font-size: 1.2rem;
     }
 
-    &__image {
-        height: 100%;
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        min-height: 180px;
-
-        @media(min-width: $breakpoint-md) {
-            min-height: 380px;
-        }
+    p {
+      color: $white;
+      text-align: left;
+      font-size: 1.2em;
+      line-height: 1.5em;
     }
 
-    &__text {
-        padding: 2em;
-        font-size: 1.2rem;
-
-        @media(min-width: $breakpoint-md) {
-            font-size: 1.2rem;
-        }
-
-        p {
-            color: $white;
-            text-align: left;
-            font-size: 1.2em;
-            line-height: 1.5em;
-        }
-
-        .s-highlight {
-            color: $white;
-            font-weight: 400;
-        }
+    .s-highlight {
+      color: $white;
+      font-weight: 400;
     }
+  }
 
-    .s-divider {
-        width: 30%;
-        margin: 0 auto;
-        height: 1px;
-        background: $col2;
-    }
+  .s-divider {
+    width: 30%;
+    margin: 0 auto;
+    height: 1px;
+    background: $col2;
+  }
 }
 
 // generic section header
 .s-section-header {
-    font-size: 1.5rem;
-    margin: 3rem 0;
-    text-align: center;
+  font-size: 1.5rem;
+  margin: 3rem 0;
+  text-align: center;
 
+  @media (min-width: $breakpoint-sm) {
+    font-size: 2rem;
+    margin: 4rem 0;
+  }
 
-    @media(min-width: $breakpoint-sm) {
-        font-size: 2rem;
-        margin: 4rem 0;
-    }
-
-    &__subtitle {
-        font-size: .9rem;
-    }
+  &__subtitle {
+    font-size: 0.9rem;
+  }
 }
 
 // Sections
 section p {
-    color: $gray-600;
+  color: $gray-600;
 }
 
 .s-solutions {
-    &__header {
-        transition: all .15s ease-out;
+  &__header {
+    transition: all 0.15s ease-out;
 
-        &:hover {
-            text-decoration: none;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px 0 rgba(150, 150, 150, .5);
-            cursor: pointer;
-        }
+    &:hover {
+      text-decoration: none;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.5);
+      cursor: pointer;
+    }
+  }
+
+  &__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      width: 100%;
     }
 
-    &__links {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+    li a {
+      padding: 0 1rem;
+      display: block;
+      line-height: 2.4rem;
+      border-bottom: 1px solid $gray-300;
+      color: $gray-700;
+      font-weight: 600;
+      transition: all 0.3s ease-out;
 
-        li {
-            width: 100%;
-        }
-
-        li a {
-            padding: 0 1rem;
-            display: block;
-            line-height: 2.4rem;
-            border-bottom: 1px solid $gray-300;
-            color: $gray-700;
-            font-weight: 600;
-            transition: all .3s ease-out;
-
-            &:hover {
-                text-decoration: none;
-                color: $col5;
-                border-bottom: 1px solid $col5;
-            }
-        }
+      &:hover {
+        text-decoration: none;
+        color: $col5;
+        border-bottom: 1px solid $col5;
+      }
     }
+  }
 }
 
-.s-approach {}
+.s-approach {
+}
 
 .s-contact {
-    padding-bottom: 5rem;
+  padding-bottom: 5rem;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#form-confirmation {
+  display: none;
+  &.form-confirmation--active {
+    display: block;
+    animation: slideIn 0.3s ease-out;
+  }
 }
