@@ -116,6 +116,10 @@ module.exports = {
       template: './src/inspiration.html',
     }),
     new HtmlWebpackPlugin ({
+      filename: 'embed.html',
+      template: './src/embed.html',
+    }),
+    new HtmlWebpackPlugin ({
       filename: 'sangood.html',
       template: './src/sangood.html',
     }),
