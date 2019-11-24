@@ -69,20 +69,22 @@ module.exports = {
       //         },
       //     }],
       // },
-      // {
-      //     // The file-loader resolves import/require() on a file into a url and emits the file into the output directory.
-      //     // Copies all imported (via index.js) files into dis/assets/images
-      //     test: /\.(jpe?g|png|gif|svg)$/i,
-      //     /* Exclude fonts while working with images, e.g. .svg can be both image or font. */
-      //     exclude: path.resolve(__dirname, '../src/assets/fonts'),
-      //     use: [{
-      //         loader: 'file-loader',
-      //         options: {
-      //             name: '[path][name].[ext]',
-      //             outputPath: './assets/images'
-      //         }
-      //     }]
-      // },
+      {
+        // The file-loader resolves import/require() on a file into a url and emits the file into the output directory.
+        // Copies all imported (via index.js) files into dis/assets/images
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        /* Exclude fonts while working with images, e.g. .svg can be both image or font. */
+        exclude: path.resolve (__dirname, '../src/assets/fonts'),
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              outputPath: './assets/images',
+            },
+          },
+        ],
+      },
       // {
       //     // Load all icons
       //     test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
@@ -154,6 +156,10 @@ module.exports = {
     new HtmlWebpackPlugin ({
       filename: 'sangooc.html',
       template: './src/sangooc.html',
+    }),
+    new HtmlWebpackPlugin ({
+      filename: 'cube.html',
+      template: './src/cube.html',
     }),
     new CopyWebpackPlugin ([
       {
