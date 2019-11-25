@@ -7,14 +7,19 @@
   "main": "server.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --mode development",
-    "build": "webpack --config webpack.dev.js --mode production",
-    "start:server": "node server.js"
+    "build": "yarn clean && webpack --config webpack.dev.js --mode production",
+    "start:server": "node server.js",
+    "clean": "yarn && rimraf dist"
   },
   "dependencies": {
     "autoprefixer": "^9.7.0",
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
+    "rimraf": "^3.0.0",
     "sendgrid": "^5.2.3"
   },
   "devDependencies": {
