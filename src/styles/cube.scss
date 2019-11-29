@@ -1,3 +1,9 @@
+$cube-green: #8aff98;
+
+.sangoocube-background-green {
+  background: $cube-green;
+}
+
 @media (min-width: 480px) {
   .container--cube {
     width: 60%;
@@ -11,7 +17,7 @@
 }
 
 .containerhighlight {
-  background-color: #8aff98;
+  background-color: $cube-green;
 }
 
 .containerhighlighttext {
@@ -38,7 +44,6 @@
   padding-top: 0px;
   font-size: 2em;
   font-weight: 400;
-  font-family: ubuntu;
   text-align: center;
   padding: 20px;
   box-shadow: #0b262d;
@@ -46,30 +51,36 @@
 
 .sangoocube-bottomtitle {
   padding-top: 0px;
-  font-size: 2em;
-  font-family: abel;
+  font-size: 2rem;
   text-align: center;
-  color: #193b1dff;
-  width: 90%;
-  margin: auto;
+  color: #193b1d;
 }
 
 .sangoocube-bottomtext {
-  padding-top: 40px;
   font-size: 1em;
-  width: 80%;
-  font-family: abel;
-  text-align: justify;
-  color: b9b3b3;
-  margin: auto;
+  color: #b9b3b3;
 }
 
 .sangoocube-bottomtextsub {
-  padding-top: 60px;
   font-size: 0, 5em;
-  width: 80%;
-  font-family: abel;
   text-align: center;
   color: #b9b3b3;
-  margin: auto;
+}
+
+.sangoocube-white-button {
+  color: $cube-green;
+  padding: 1.2rem 2rem;
+  background: #fff;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.sangoocube-container-bottom {
+  background: whitesmoke;
 }
