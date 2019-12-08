@@ -153,8 +153,8 @@ module.exports = {
       template: './src/sangooc.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'cube.html',
-      template: './src/cube.html',
+      filename: 'cube/cube.html',
+      template: './src/cube/cube.html',
     }),
     new HtmlWebpackPlugin({
       filename: 'clf.html',
