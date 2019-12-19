@@ -2,8 +2,7 @@
   "name": "sangoo-site",
   "version": "1.0.0",
   "engines": {
-    "node": "12.13.0",
-    "yarn": "1.13.0"
+    
   },
   "description": "sangoo site",
   "private": "true",
@@ -45,3 +44,4 @@
     "webpack-dev-server": "^3.4.1"
   }
 }
+
