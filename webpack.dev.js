@@ -24,7 +24,8 @@ module.exports = {
     fs: 'empty',
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         // This package allows transpiling JavaScript files using Babel and webpack.
@@ -35,16 +36,15 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-        use: [{
+        use: [
+          {
             loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: (resourcePath, context) => {
                 // publicPath is the relative path of the resource to the context
                 // e.g. for ./css/admin/main.css the publicPath will be ../../
                 // while for ./css/main.css the publicPath will be ../
-                return (
-                  path.relative(path.dirname(resourcePath), context) + '/'
-                );
+                return path.relative(path.dirname(resourcePath), context) + '/';
               },
             },
           },
@@ -68,18 +68,21 @@ module.exports = {
       //     }],
       // },
       // {
-      //     // The file-loader resolves import/require() on a file into a url and emits the file into the output directory.
-      //     // Copies all imported (via index.js) files into dis/assets/images
-      //     test: /\.(jpe?g|png|gif|svg)$/i,
-      //     /* Exclude fonts while working with images, e.g. .svg can be both image or font. */
-      //     exclude: path.resolve(__dirname, '../src/assets/fonts'),
-      //     use: [{
-      //         loader: 'file-loader',
-      //         options: {
-      //             name: '[path][name].[ext]',
-      //             outputPath: './assets/images'
-      //         }
-      //     }]
+      //   // The file-loader resolves import/require() on a file into a url and emits the file into the output directory.
+      //   // Copies all imported (via index.js) files into dis/assets/images
+      //   test: /\.(jpe?g|png|gif|svg)$/i,
+      //   /* Exclude fonts while working with images, e.g. .svg can be both image or font. */
+      //   exclude: path.resolve(__dirname, '../src/assets/fonts'),
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         // name: '[path][name].[ext]',
+      //         name: '[name].[ext]',
+      //         outputPath: './images/',
+      //       },
+      //     },
+      //   ],
       // },
       // {
       //     // Load all icons
@@ -104,67 +107,65 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html',
-      // inject: 'body',
     }),
     new HtmlWebpackPlugin({
       filename: 'experience.html',
       template: './src/experience.html',
-      // inject: 'body',
     }),
     new HtmlWebpackPlugin({
       filename: 'inspiration.html',
       template: './src/inspiration.html',
-      // inject: 'body',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'embed.html',
+      template: './src/embed.html',
     }),
     new HtmlWebpackPlugin({
       filename: 'sangood.html',
       template: './src/sangood.html',
-      // inject: 'body',
     }),
     new HtmlWebpackPlugin({
       filename: 'testimonial_vpk.html',
       template: './src/testimonial_vpk.html',
-      // inject: 'body',
     }),
     new HtmlWebpackPlugin({
       filename: 'sangoop.html',
       template: './src/sangoop.html',
-      // inject: 'body',
     }),
     new HtmlWebpackPlugin({
       filename: 'reading001.html',
       template: './src/reading001.html',
-      // inject: 'body',
     }),
     new HtmlWebpackPlugin({
       filename: 'reading002.html',
       template: './src/reading002.html',
-      // inject: 'body',
     }),
     new HtmlWebpackPlugin({
       filename: 'sangootandt.html',
       template: './src/sangootandt.html',
-      // inject: 'body',
     }),
     new HtmlWebpackPlugin({
       filename: 'evaluation.html',
       template: './src/evaluation.html',
-      // inject: 'body',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'CLF.html',
-      template: './src/CLF.html',
-      // inject: 'body',
     }),
     new HtmlWebpackPlugin({
       filename: 'sangooc.html',
       template: './src/sangooc.html',
-      // inject: 'body',
     }),
-    new CopyWebpackPlugin([{
-      from: 'src/assets/images',
-      to: 'images',
-    }, ]),
+    new HtmlWebpackPlugin({
+      filename: 'cube/cube.html',
+      template: './src/cube/cube.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'clf.html',
+      template: './src/clf.html',
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: 'src/assets/images',
+        to: 'images',
+      },
+    ]),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // all options are optional
