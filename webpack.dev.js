@@ -160,6 +160,18 @@ module.exports = {
       filename: 'clf.html',
       template: './src/clf.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'sangoo_open.html',
+      template: './src/sangoo_open.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'sangoo_open_ref.html',
+      template: './src/sangoo_open_ref.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'sangoo_open_clf.html',
+      template: './src/sangoo_open_clf.html',
+    }),
     new CopyWebpackPlugin([
       {
         from: 'src/assets/images',

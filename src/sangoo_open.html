@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./partials/head.html')}
+  </head>
+
+  <body>
+    <div class="s-header" id="mainNav">
+      <div class="s-navbar">
+        <div class="container">
+          <div class="row">
+            <div class="s-nav-wrapper d-flex flex-fill justify-content-between align-items-center">
+              <a class="s-logo" href="/">
+                <svg viewBox="0 0 300 90">
+                  <path
+                    d="M161 21.4c-12.6 0-21.4 8.9-21.4 21.5 0 10 7.5 17.2 17.7 17.2 4 0 7.2-1.4 9.2-3.4V58c-.5 6-3 8.2-9.3 8.2-3.4 0-5.1-.6-7.5-1.8l-1-.5-4.6 9.2.6.6c1.7 1.5 7.4 3.7 13.2 3.7 14.1 0 20.3-10.1 20.3-20.1V40c.2-11.1-6.8-18.6-17.2-18.6zm5.3 19.2c0 2.8-.7 5.1-2.1 6.7-1.3 1.5-3.1 2.3-5.3 2.3-4 0-6.8-3.3-6.8-7.9 0-5.3 3.3-9.2 7.9-9.2 4-.1 6.3 2.9 6.3 8.1zm-128.2-2C31 37.5 31 36.7 31 35.8s0-3.4 6.9-3.4c2.9 0 5.9.7 8.3 1.8l1.9.9L46.4 24l-.5-.3c-2.4-1.4-5.4-2.1-9-2.1-10.3 0-18.1 6.5-18 15 0 6.6 4.4 10.4 13.5 11.7 7.4 1 7.4 2.2 7.4 3.3s-.4 1.8-1.3 2.4c-1 .6-2.7.9-4.9.9-2.7 0-5.9-.7-8.4-1.8l-.8-.3-6.1 8 .6.7c1.4 1.6 9.3 4.2 15.2 4.2 11.1 0 17.8-5.5 17.7-14.6-.1-6.9-4.7-11-13.7-12.5zm34.7-16.9c-3.4 0-6.3.6-8.8 1.7l-.4.2L59 36.4l2.7-1.7c1.7-1.1 4.8-2.4 9.7-2.4 5.4 0 7.3 1.4 7.5 5.7h-2.4c-7.1 0-12.5 1.3-16.1 3.8-3.2 2.3-4.9 5.6-4.9 9.8 0 8.1 7 13.7 17.1 13.7h2c4.6 0 8.7-1.5 11.6-4.3s4.6-6.7 4.5-11.1v-9.2c.1-12.2-6.3-19-17.9-19zm6.1 25.5V50c0 1.7-.4 3-1.2 3.8-.8.8-2.2 1.2-4.1 1.2-2.2 0-5.8-.5-5.8-3.9 0-1.4.4-2.2 1.5-2.8 1.3-.8 3.7-1.2 7.1-1.2l2.5.1zm36.6-25.7c-13.2 0-19.1 9.2-19.1 18.2V57c0 4.4 3.4 7.6 8.1 7.6h4.1V40.4c0-4.9 2.3-7.9 6.2-7.9 4.8 0 7 2.7 7 8.6V57c0 4.5 3.4 7.6 8.4 7.6h3.8V40.2c-.2-11.2-7.5-18.7-18.5-18.7zm89.7-.1c-12.5 0-20.9 9.2-20.8 22.8 0 10.5 6.9 21.2 20 21.2 6.4 0 11.8-2.3 15.5-6.7 3.5-4.1 5.3-9.6 5.3-16 0-10.6-6.9-21.3-20-21.3zm7.5 22.7c0 3.1-.7 5.7-1.9 7.5-1.3 1.8-3.2 2.7-5.6 2.7-5.6 0-8.4-3.8-8.4-11.6 0-3.1.7-5.7 1.9-7.5 1.3-1.8 3.2-2.7 5.5-2.7 5.7-.1 8.5 3.9 8.5 11.6zm37.1-22.8c-12.5 0-20.9 9.2-20.8 22.8 0 10.5 6.9 21.2 20 21.2 12.5 0 20.9-9.1 20.8-22.7 0-10.6-6.9-21.3-20-21.3zm7.5 22.7c0 3.1-.7 10.2-7.5 10.2-5.6 0-8.4-3.8-8.4-11.6 0-6.4 2.8-10.3 7.5-10.3 5.6.1 8.4 4 8.4 11.7zM277.2 34.1c-4.3 0-6.6-3.4-6.6-6.8s2.3-6.8 6.6-6.8 6.6 3.4 6.6 6.8-2.3 6.8-6.6 6.8zm0-12.1c-3.5 0-5.1 2.8-5.1 5.3 0 2.6 1.6 5.3 5.1 5.3s5.1-2.8 5.1-5.3-1.6-5.3-5.1-5.3z"
+                  />
+                  <path
+                    d="M279.6 29.8l-.5-1.3c-.2-.5-.5-.8-.8-1 .4-.1.7-.3 1-.6.3-.3.4-.7.4-1.2 0-.6-.2-1-.6-1.4s-.9-.5-1.6-.5h-.8c-.3 0-.6 0-1 .1s-.6.1-.8.2v5.7c0 .3.1.5.2.7.2.2.4.2.7.2h.4V28c.1 0 .3 0 .7.1.1 0 .2 0 .3.1.1 0 .1.1.2.1.1.1.2.1.2.2.1.1.1.3.2.4l.5 1.2c.2.4.5.6 1 .6h.4c.1 0 .2-.1.2-.2-.1-.3-.3-.6-.3-.7zm-2.4-2.9c-.4 0-.8 0-1-.1V25c.2 0 .4-.1.6-.1h.4c.3 0 .6.1.8.2.2.1.3.4.3.8 0 .3-.1.5-.3.7-.3.2-.5.3-.8.3z"
+                  />
+                </svg>
+              </a>
+
+              <div class="s-burger-box" href="javascript:void(0);" class="nav-link icon" onclick="toggleMobileMenu()">
+                <div class="s-burger"></div>
+              </div>
+
+              <ul class="nav">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" onclick="toggleMobileMenu()" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="./inspiration.html">Inspiration</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="#inhoud">Wat zal ik leren?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="#praktisch">Praktisch</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="#ontdek">Ontdek meer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="#info">Inschrijven?</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="s-intro-background">
+        <div class="white-corner"></div>
+        <div class="container position-relative">
+          <div class="skewed-box"></div>
+        </div>
+      </div>
+
+      <div class="container container--narrow">
+        <section class="s-top-banner">
+          <div class="row">
+            <div class="col-12 mb-md-5">
+              <h1 class="mb-4">SANGOO, een innovatieve change management leerervaring</h1>
+              <p>
+                <mark>UITZONDERLIJK in open sessie!</mark> <br /><br />Al ervaren hoe moeizaam verandering kan lopen? SANGOO helpt! SANGOO is een
+                business simulatie die je leert om succesvol veranderingen te (bege)leiden.
+              </p>
+              <p>
+                Na twee dagen al-doende leren, vertrek je met een
+                <b> hands-on kapstok en de tools om de verandering binnen jouw werkomgeving naar succes te leiden!</b>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--  -->
+      <div class="bg-white">
+        <div class="container container--narrow">
+          <section>
+            <div class="row flex-row flex-wrap flex-md-row flex-md-wrap">
+              <div class="col-md-6 text-center p-0">
+                <video class="img-fluid mt-5" controls autoplay muted src="./images/sangoo_explainer_web.mp4" alt=""></video>
+              </div>
+
+              <div class="col-md-6 text-left pl-md-5 mt-5">
+                <h2>Hoe verloopt de training?</h2>
+                <p class="text-justify pt-1">
+                  De SANGOO simulatie zet jou in het midden van de actie. Je kruipt in de huid van een program manager binnen een fictieve
+                  organisatie. Het is jouw uitdaging om de verandering waar de fictieve organisatie voor staat, tot een succes te maken.
+                </p>
+              </div>
+
+              <div class="col-md-12 text-justleftify mt-4 mb-2">
+                Aan de hand van <b>verschillende types opdrachten</b> doorheen het verandertraject reiken we inzichten en tools aan op een
+                inter(actieve) manier. <br /><br /><mark>Geen klassieke opleiding maar een intensieve ervaring.</mark><br /><br />Doorheen de sessie
+                werk je samen (in team) met andere deelnemers, een ideale gelegenheid om ook van anderen te leren.
+              </div>
+
+              <div class="text-justify mb-5">
+                <button type="button" class="s-arrow-link btn btn-light ml-4 ml-md-2">
+                  <a class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/6a6Ahu_TNjU" data-target="#myModal">
+                    <span class="s-arrow-text pl-2">Ontdek SANGOO in 90 sec (video)</span>
+                    <svg class="s-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                    </svg>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="bg-gray-100 pt-1 pb-1">
+        <div class="container container--narrow">
+          <section id="inhoud">
+            <div class="col-md-12 text-left mt-2 mb-5">
+              <h2 class="mb-3 mt-3">Wat zal ik leren?</h2>
+
+              Aan de hand van de verschillende opdrachten binnen de simulatie je krijg een doorgedreven inzicht in het
+              <b>Change Leadership Framework</b>, een pragmatisch draaiboek dat je in staat stelt om de verandering binnen jouw organisatie vorm te
+              geven en te (bege)leiden. Het framework bevat niet alleen <b>theoretische kennis</b> maar reikt ook <b>bruikbare tools</b> aan om de
+              slaagkansen van jouw verandertraject te optimaliseren. De training combineert <b>'harde'</b> (de procesmatige) en '<b>zachte'</b> (de
+              menselijk/psychologische) aspecten van verandering. <br /><br />Doorheen de ervaring bouw je een wervende presentatie over de
+              <b>visie en strategie</b> die het waarom van de verandering onderbouwen. Je analyseert de <b>organisatie</b> om alle betrokken partijen
+              te identificeren. Je verkent de <b>veranderhistoriek</b> van de organisatie als belangrijke bron van informatie om je aanpak vorm te
+              geven. Je krijgt inzicht in het belang van communicatie, en brengt <b>communiceren met impact</b> in de praktijk. Je krijgt inzicht in
+              bronnen van weerstand en de verschillende mogelijkheden om hiermee om te gaan. <br> Wil je graag nog meer informatie over de inhoudelijke
+              topics die doorheen de tweedaagse ervaring aan bod komen? Laat het ons weten via het <a href="#info" style="color:#02b0df">contactformulier</a>.
+            </div>
+
+            <div class="text-left mb-5 mb-sum-2">
+              <button type="button" class="s-arrow-link btn btn-light">
+                <a href="./sangoo_open_clf.html">
+                  <span class="s-arrow-text pl-2">Het change leadership framework</span>
+                  <svg class="s-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    ml-4 ml-md-2
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                  </svg>
+                </a>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="bg-white">
+        <div class="container container--narrow">
+          <section>
+            <div class="row mb-4">
+              <div class="col-md-6 p-md-4">
+                <h2 class="mt-3">Voor wie is de training?</h2>
+                <p class="text-left pt-3">
+                  SANGOO richt zich op organisaties die op een duurzame wijze hun verandervaardigheden willen uitbouwen. Grote bedrijven uit
+                  verschillende sectoren (bank en verzekeringen, productie, beeldvorming, facilities, procesindustrie,... ) zetten onze unieke
+                  leerervaring in om verandercompetenties op te bouwen.
+                </p>
+              </div>
+
+              <div class="col-md-6 text-center p-0 p-md-4">
+                <img class="img-fluid mt-md-5 responsive-img-sm" src="./images/experience_img1.jpg" alt="" />
+              </div>
+
+              <div class="col-md-12 text-left mt-4 mb-2">
+                <mark>Uitzonderlijk</mark> organiseren we een open sessie om professionals uit andere organisaties te versterken met onze aanpak.
+                <p>
+                  Ben jij manager, teamverantwoordelijke, project manager, stafmedewerker, domeinexpert, ...? Speel jij een actieve rol bij het leiden
+                  van verandering en wil je ontdekken hoe je jouw verandering het best kan aanpakken? Laat dan van je horen en deel je interesse in
+                  deze open sessie via het contact formulier hieronder.
+                </p>
+              </div>
+
+              <div class="text-left text-md-right pl-3 pl-md-0">
+                <button type="button" class="s-arrow-link btn btn-light">
+                  <a href="./sangoo_open_ref.html">
+                    <span class="s-arrow-text">Ontdek wat onze klanten vertellen</span>
+                    <svg class="s-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                    </svg>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- praktische informatie -->
+      <div class="bg-gray-100 mt-5 pb-1">
+        <div class="container container--narrow">
+          <section id="praktisch" class="s-flavours">
+            <div class="row">
+              <div class="col-12 mb-5">
+                <div class="s-section-header">Praktische informatie</div>
+                <p class="text-left">
+                  <b>WANNEER?</b><br />De uitzonderlijke open sessie duurt twee dagen en wordt georganiseerd op 22 en 23 mei 2020.
+                </p>
+                <p class="text-left"><b>WAAR?</b><br />De sessie zal georganiseerd worden in de regio GENT. (details beschikbaar na inschrijving)</p>
+                <p class="text-left">
+                  <b>BESCHIKBARE PLAATSEN?</b><br />Om de impact van de training te maximaliseren beperken we het aantal deelnemers tot 12.
+                  <mark>Nog 9 plaatsen beschikbaar.</mark>
+                </p>
+                <p class="text-left">
+                  <b>KOSTPRIJS?</b><br />De prijs voor de tweedaagse is 1750 EUR (excl btw). Dit omvat eveneens een broodjeslunch op beide dagen.
+                </p>
+                <p class="text-left">
+                  <b>EXTRA</b><br />Wij bieden ook de mogelijkheid om samen met jou de moeilijkheden van jouw specifieke case aan te pakken. Interesse
+                  hierin? Laat ons zeker iets weten.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section id="info">
+        <div class="white">
+          <div class="container container--narrow">
+            <div class="row flex-row flex-wrap-reverse flex-md-row flex-md-wrap">
+              <div class="col-12 text-center mt-5 mb-4">
+                <h2 class="text-center">Op zoek naar extra informatie of wil je erbij zijn bij onze volgende sessie?</h2>
+                <p class="mt-3 mb-3">
+                  Laat ons weten hoe en wanneer we jou het best kunnen bereiken.<br />
+                  We maken graag tijd voor een babbel. (of mail naar sangoo@alveare-change.com)
+                </p>
+                <div class="row">
+                  <div class="col-12 px-5">
+                    <div class="w-md-60 m-auto">
+                      <form name="info-form" id="info-form">
+                        <div class="form-group">
+                          <label for="name" class="d-block text-left text-gray mt-2">Voornaam, Naam</label>
+                          <input class="form-control" id="name" name="name" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="email" class="d-block text-left text-gray mt-2">E-mail</label>
+                          <input class="form-control" id="email" name="from" type="email" required />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="phone" class="d-block text-left text-gray mt-2">Telefoonnummer</label>
+                          <input class="form-control" id="phone" name="phone" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="available" class="d-block text-left text-gray mt-2">Wanneer kunnen we jou het best bereiken?</label>
+                          <input class="form-control" id="available" name="available" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="remarks" class="d-block text-left text-gray mt-2">Heb je een specifieke vraag?</label>
+                          <textarea class="form-control" id="remarks" name="remarks" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block smb-2 mt-5">Versturen</button>
+                      </form>
+
+                      <div class="alert alert-success my-3" role="alert" id="form-confirmation">
+                        <strong>We hebben je vraag goed ontvangen </strong> en laten snel van ons horen!
+                        <button type="button" class="btn btn-link p-0" id="form-confirmation-close">Sluiten</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Top stories - Flavour 2 of the grid -->
+
+      <div class="mb-2 mb-sm-7 mb-md-5 pb-md-5 pb-sm-5">
+        <div class="container container--narrow">
+          <section id="ontdek" class="s-stories">
+            <div class="row">
+              <div class="col-12">
+                <div class="s-section-header mt-5 mt-sm-3">ONTDEK OOK</div>
+              </div>
+            </div>
+            <style>
+              /* Customize story-grid here (only positioning)*/
+              .s-story-container > a {
+                min-height: 160px;
+              }
+
+              .s-story-grid-item-1 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+              }
+            </style>
+            <div class="row">
+              <div class="s-story-container">
+                <a
+                  class="s-story s-story--sm s-story-grid-item-1 video-btn"
+                  data-toggle="modal"
+                  style="background-image: url('./images/grid_testimonial_participants.jpg'); background-size:cover"
+                  data-src="https://www.youtube.com/embed/-n7JNOLzLQg"
+                  data-target="#myModal"
+                >
+                  <div class="s-story__title">WAT DEELNEMERS VERTELLEN</div>
+                  <div class="s-story__subtitle">OVER SANGOO</div>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/company/alveare-bvba"
+                  target="blank"
+                  class="s-story s-story--sm s-story-grid-item-3"
+                  style="background-image: url('./images/open_trainers.jpg'); background-size:cover"
+                >
+                  <div class="s-story__title">DE TRAINERS</div>
+                </a>
+
+                <a
+                  href="./reading002.html"
+                  target="blank"
+                  class="s-story s-story--sm s-story-grid-item-2"
+                  style="background-image: url('./images/grid_reading_tip.jpg'); background-size:cover"
+                >
+                  <div class="s-story__title">LEESTIP</div>
+                </a>
+
+                <a
+                  href="./sangoo_open_ref.html"
+                  target="blank"
+                  class="s-story s-story--sm s-story-grid-item-3"
+                  style="background-image: url('./images/grid_participants_score.png'); background-size:cover"
+                >
+                  <div class="s-story__title">DEELNEMERS' SCORE</div>
+                </a>
+
+                <a
+                  href="http://www.alveare-change.com/questionnaire/questionnaire_nl.php"
+                  target="blank"
+                  class="s-story s-story--sm s-story-grid-item-3"
+                  style="background-image: url('./images/grid_assess.jpg'); background-size:cover"
+                >
+                  <div class="s-story__title">CHECK JOUW AANPAK</div>
+                </a>
+
+                <a
+                  class="s-story s-story--sm s-story-grid-item-3 video-btn"
+                  data-toggle="modal"
+                  style="background-image: url('./images/grid_video_05.png'); background-size:cover"
+                  data-src="https://www.youtube.com/embed/-S2X-Xn1xuY"
+                  data-target="#myModal"
+                >
+                  <div class="s-story__title">VIDEO TIPS</div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <div class="row mt-5">
+            <div class="col-12 mb text-center text-white">
+              <small class="text-gray text-col8"><a href="./">SANGOO</a> is een gedeponeerd merk van ALVEARE bvba</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
