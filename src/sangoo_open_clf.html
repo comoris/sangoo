@@ -33,6 +33,9 @@
                   <a class="nav-link" onclick="toggleMobileMenu()" href="./inspiration.html">Inspiration</a>
                 </li> -->
                 <li class="nav-item">
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="#info">Inschrijven</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" onclick="toggleMobileMenu()" href="./sangoo_open.html">Een unieke aanpak</a>
                 </li>
               </ul>
@@ -110,25 +113,75 @@
             <div class="col-md-6 text-center p-0 p-md-4">
               <img class="mt-md-5 mb-2 mb-md-0 responsive-img-sm img-fluid" src="./images/CLF_theories.svg" alt="" />
             </div>
-          </div>
-        </div>
 
-        <div class="bg-white">
-          <div class="container container--narrow">
-            <div class="row flex-row flex-wrap-reverse flex-md-row flex-md-wrap">
-              <div class="col-md-12 text-justify mt-5 mt-md-4 mb-4">
-                <h4 class="pb-3">De onderbouw van het framework</h4>
-                <p>
-                  De inzichten waarop we het framework bouwden zijn afkomstig van leidenden auteurs en onderzoekers zoals: Kotter, Senge, Haidt,
-                  Heath, Beer, Decaluwe, Nohria, Thaler, Kahneman, .... De veelheid aan inzichten wordt gecombineerd in een rijk instrument dat SANGOO
-                  deelnemers heel wat verschillende invalshoeken meegeeft voor hun specifieke veranderuitdagingen.
-                </p>
-              </div>
+            <div class="col-md-12 text-justify mt-5 mt-md-4 mb-4">
+              <h4 class="pb-3">De onderbouw van het framework</h4>
+              <p>
+                De inzichten waarop we het framework bouwden zijn afkomstig van leidenden auteurs en onderzoekers zoals: Kotter, Senge, Haidt, Heath,
+                Beer, Decaluwe, Nohria, Thaler, Kahneman, .... De veelheid aan inzichten wordt gecombineerd in een rijk instrument dat SANGOO
+                deelnemers heel wat verschillende invalshoeken meegeeft voor hun specifieke veranderuitdagingen.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
+      <!--inschrijven-->
+
+      <section id="info">
+        <div class="white">
+          <div class="container container--narrow">
+            <div class="row flex-row flex-wrap-reverse flex-md-row flex-md-wrap">
+              <div class="col-12 text-center mt-5 mb-4">
+                <h2 class="text-center">Op zoek naar extra informatie of wil je erbij zijn bij onze volgende sessie?</h2>
+                <p class="mt-3 mb-3">
+                  Laat ons weten hoe en wanneer we jou het best kunnen bereiken.<br />
+                  We maken graag tijd voor een babbel. (of mail naar sangoo@alveare-change.com)
+                </p>
+                <div class="row">
+                  <div class="col-12 px-5">
+                    <div class="w-md-60 m-auto">
+                      <form name="info-form" id="info-form">
+                        <div class="form-group">
+                          <label for="name" class="d-block text-left text-gray mt-2">Voornaam, Naam</label>
+                          <input class="form-control" id="name" name="name" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="email" class="d-block text-left text-gray mt-2">E-mail</label>
+                          <input class="form-control" id="email" name="from" type="email" required />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="phone" class="d-block text-left text-gray mt-2">Telefoonnummer</label>
+                          <input class="form-control" id="phone" name="phone" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="available" class="d-block text-left text-gray mt-2">Wanneer kunnen we jou het best bereiken?</label>
+                          <input class="form-control" id="available" name="available" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="remarks" class="d-block text-left text-gray mt-2">Heb je een specifieke vraag?</label>
+                          <textarea class="form-control" id="remarks" name="remarks" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block smb-2 mt-5">Versturen</button>
+                      </form>
+
+                      <div class="alert alert-success my-3" role="alert" id="form-confirmation">
+                        <strong>We hebben je vraag goed ontvangen </strong> en laten snel van ons horen!
+                        <button type="button" class="btn btn-link p-0" id="form-confirmation-close">Sluiten</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Top stories - Flavour 2 of the grid -->
 
       <div class="mb-2 mb-sm-7 mb-md-5 pb-md-5 pb-sm-5">
