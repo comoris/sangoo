@@ -172,6 +172,10 @@ module.exports = {
       filename: 'sangoo_open_clf.html',
       template: './src/sangoo_open_clf.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'sangoo_open_trainers.html',
+      template: './src/sangoo_open_trainers.html',
+    }),
     new CopyWebpackPlugin([
       {
         from: 'src/assets/images',
