@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./partials/head.html')}
+  </head>
+
+  <body>
+    <div class="s-header" id="mainNav">
+      <div class="s-navbar">
+        <div class="container">
+          <div class="row">
+            <div class="s-nav-wrapper d-flex flex-fill justify-content-between align-items-center">
+              <a class="s-logo" href="/">
+                <svg viewBox="0 0 300 90">
+                  <path
+                    d="M161 21.4c-12.6 0-21.4 8.9-21.4 21.5 0 10 7.5 17.2 17.7 17.2 4 0 7.2-1.4 9.2-3.4V58c-.5 6-3 8.2-9.3 8.2-3.4 0-5.1-.6-7.5-1.8l-1-.5-4.6 9.2.6.6c1.7 1.5 7.4 3.7 13.2 3.7 14.1 0 20.3-10.1 20.3-20.1V40c.2-11.1-6.8-18.6-17.2-18.6zm5.3 19.2c0 2.8-.7 5.1-2.1 6.7-1.3 1.5-3.1 2.3-5.3 2.3-4 0-6.8-3.3-6.8-7.9 0-5.3 3.3-9.2 7.9-9.2 4-.1 6.3 2.9 6.3 8.1zm-128.2-2C31 37.5 31 36.7 31 35.8s0-3.4 6.9-3.4c2.9 0 5.9.7 8.3 1.8l1.9.9L46.4 24l-.5-.3c-2.4-1.4-5.4-2.1-9-2.1-10.3 0-18.1 6.5-18 15 0 6.6 4.4 10.4 13.5 11.7 7.4 1 7.4 2.2 7.4 3.3s-.4 1.8-1.3 2.4c-1 .6-2.7.9-4.9.9-2.7 0-5.9-.7-8.4-1.8l-.8-.3-6.1 8 .6.7c1.4 1.6 9.3 4.2 15.2 4.2 11.1 0 17.8-5.5 17.7-14.6-.1-6.9-4.7-11-13.7-12.5zm34.7-16.9c-3.4 0-6.3.6-8.8 1.7l-.4.2L59 36.4l2.7-1.7c1.7-1.1 4.8-2.4 9.7-2.4 5.4 0 7.3 1.4 7.5 5.7h-2.4c-7.1 0-12.5 1.3-16.1 3.8-3.2 2.3-4.9 5.6-4.9 9.8 0 8.1 7 13.7 17.1 13.7h2c4.6 0 8.7-1.5 11.6-4.3s4.6-6.7 4.5-11.1v-9.2c.1-12.2-6.3-19-17.9-19zm6.1 25.5V50c0 1.7-.4 3-1.2 3.8-.8.8-2.2 1.2-4.1 1.2-2.2 0-5.8-.5-5.8-3.9 0-1.4.4-2.2 1.5-2.8 1.3-.8 3.7-1.2 7.1-1.2l2.5.1zm36.6-25.7c-13.2 0-19.1 9.2-19.1 18.2V57c0 4.4 3.4 7.6 8.1 7.6h4.1V40.4c0-4.9 2.3-7.9 6.2-7.9 4.8 0 7 2.7 7 8.6V57c0 4.5 3.4 7.6 8.4 7.6h3.8V40.2c-.2-11.2-7.5-18.7-18.5-18.7zm89.7-.1c-12.5 0-20.9 9.2-20.8 22.8 0 10.5 6.9 21.2 20 21.2 6.4 0 11.8-2.3 15.5-6.7 3.5-4.1 5.3-9.6 5.3-16 0-10.6-6.9-21.3-20-21.3zm7.5 22.7c0 3.1-.7 5.7-1.9 7.5-1.3 1.8-3.2 2.7-5.6 2.7-5.6 0-8.4-3.8-8.4-11.6 0-3.1.7-5.7 1.9-7.5 1.3-1.8 3.2-2.7 5.5-2.7 5.7-.1 8.5 3.9 8.5 11.6zm37.1-22.8c-12.5 0-20.9 9.2-20.8 22.8 0 10.5 6.9 21.2 20 21.2 12.5 0 20.9-9.1 20.8-22.7 0-10.6-6.9-21.3-20-21.3zm7.5 22.7c0 3.1-.7 10.2-7.5 10.2-5.6 0-8.4-3.8-8.4-11.6 0-6.4 2.8-10.3 7.5-10.3 5.6.1 8.4 4 8.4 11.7zM277.2 34.1c-4.3 0-6.6-3.4-6.6-6.8s2.3-6.8 6.6-6.8 6.6 3.4 6.6 6.8-2.3 6.8-6.6 6.8zm0-12.1c-3.5 0-5.1 2.8-5.1 5.3 0 2.6 1.6 5.3 5.1 5.3s5.1-2.8 5.1-5.3-1.6-5.3-5.1-5.3z"
+                  />
+                  <path
+                    d="M279.6 29.8l-.5-1.3c-.2-.5-.5-.8-.8-1 .4-.1.7-.3 1-.6.3-.3.4-.7.4-1.2 0-.6-.2-1-.6-1.4s-.9-.5-1.6-.5h-.8c-.3 0-.6 0-1 .1s-.6.1-.8.2v5.7c0 .3.1.5.2.7.2.2.4.2.7.2h.4V28c.1 0 .3 0 .7.1.1 0 .2 0 .3.1.1 0 .1.1.2.1.1.1.2.1.2.2.1.1.1.3.2.4l.5 1.2c.2.4.5.6 1 .6h.4c.1 0 .2-.1.2-.2-.1-.3-.3-.6-.3-.7zm-2.4-2.9c-.4 0-.8 0-1-.1V25c.2 0 .4-.1.6-.1h.4c.3 0 .6.1.8.2.2.1.3.4.3.8 0 .3-.1.5-.3.7-.3.2-.5.3-.8.3z"
+                  />
+                </svg>
+              </a>
+
+              <div class="s-burger-box" href="javascript:void(0);" class="nav-link icon" onclick="toggleMobileMenu()">
+                <div class="s-burger"></div>
+              </div>
+
+              <ul class="nav">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" onclick="toggleMobileMenu()" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="./inspiration.html">Inspiration</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="#inhoud">resultaat?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="#aanpak">Wat maakt de aanpak verschillend?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="#praktisch"> Praktisch?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="#info">meer informatie?</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="s-intro-background">
+        <div class="white-corner"></div>
+        <div class="container position-relative">
+          <div class="skewed-box"></div>
+        </div>
+      </div>
+
+      <div class="container container--narrow">
+        <section class="s-top-banner">
+          <div class="row">
+            <div class="col-12 mb-md-2">
+              <h1 class="mb-4">Proces denken en modelleren, een unieke aanpak op maat van uw HR-team</h1>
+              <p>
+                De digitalisering van HR zorgt voor nieuwe uitdagingen voor HR-medewerkers. Er wordt van hen verwacht dat ze:<br />
+                <br />- met een proces bril naar HR kijken, <br />
+                - een duidelijk zicht hebben op bestaande processen en hoe ze te verbeteren, <br />
+                - aanpassingen inzichtelijk kunnen maken voor business stakeholders, <br />
+                - het aanspreekpunt worden voor het interne IT-team of de dienstenleverancier,<br />
+                - ...
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--  -->
+      <div class="bg-white">
+        <div class="container container--narrow">
+          <section>
+            <div class="row flex-row flex-wrap flex-md-row flex-md-wrap">
+              <div class="col-md-6 text-center p-0 ">
+                <img class="img-fluid mt-3 responsive-img-sm" src="./images/BPMN_confidence.jpg" alt="" />
+              </div>
+
+              <div class="col-md-6 text-left pl-md-5 mt-4">
+                <h2>Uit de comfortzone</h2>
+                <div class="text-justify pt-1">
+                  Het zijn verwachtingen die vaak veraf liggen van het expertise gebied van het HR-team. Ook de persoonlijke affiniteit met betrekking
+                  tot procesdenken of technologie-oplossingen zorgt vaak voor een extra drempel.
+                </div>
+              </div>
+
+              <div class="col-md-12 text-justleftify mt-5">
+                <h2>Herkenbaar?</h2>
+                <p class="mt-3 mb-5">
+                  Met een <b>actieve workshop approach</b> versterken we uw HR-team om deze proces uitdagingen met meer vertrouwen het hoofd te
+                  bieden. Geen klassieke opleiding maar een al doende leerervaring.<br />
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="bg-gray-100 pt-1 pb-1">
+        <div class="container container--narrow">
+          <section id="inhoud">
+            <div class="col-md-12 pl-0 text-left mt-2 mb-5">
+              <h2 class="mb-3 mt-4">Wat haal ik eruit?</h2>
+
+              <p>
+                Onze aanpak zorgt voor een goed <b>inzicht in proces-denken</b> en het belang ervan. Jullie bouwen samen een
+                <b>gedeelde toegankelijke procestaal</b>
+                op (gebaseerd op de internationale BPMN-standaard) die jullie als team niet alleen toelaat de proces templates van jullie leverancier
+                te lezen maar ook om eigen processen in kaart te brengen en verbetermogelijkheden te identificeren.<br />
+                <br />
+                We geven ook inzicht in de mogelijke valkuilen van een digitaliseringstraject en duiden de mogelijke lange termijn impact van keuzes
+                die nu worden gemaakt, ….
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="bg-white">
+        <div class="container container--narrow">
+          <section id="aanpak">
+            <div class="row mb-2">
+              <div class="col-md-6 p-md-4">
+                <h2 class="mt-3">Wat maakt onze aanpak verschillend?</h2>
+                <p class="text-left pt-3">
+                  <b>Ervaringsgericht leren</b>: We reiken de basisconcepten aan op een actieve en betrokken manier: leren door te doen.<br />
+                  <br /><b>Vertaling naar uw realiteit</b>: Vervolgens verdiepen we uw kennis op basis van uw specifieke context, zodat de aangereikte
+                  concepten dadelijk in de praktijk worden gebracht.
+                </p>
+              </div>
+
+              <div class="col-md-6 text-center pt-md-5">
+                <img class="img-fluid mt-md-5 mb-3 mb-sm-0responsive-img-sm" src="./images/BPMN_handson.jpg" alt="" />
+              </div>
+
+              <div class="col-md-12 text-left pl-md-4 pt-md-1">
+                <p>
+                  <b>Pragmatische aanpak</b>: geen hoogdravende theorieën, maar praktisch toepasbare concepten zodat de toegevoegde waarde zeer
+                  concreet wordt. <br /><br /><b>Team ervaring</b>: opdrachten worden in groep uitgevoerd, waarbij door uitwisseling van gedachten en
+                  meningen de aangereikte concepten dadelijk ‘beleefd’ worden. <br /><br /><b>Professionele, hands-on begeleiding</b>: elke groep
+                  wordt begeleid door een specialist in change en change leadership met jaren ervaring in procesdenken op de grens tussen IT en
+                  business.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- praktische informatie -->
+      <div class="bg-gray-100 pb-1">
+        <div class="container container--narrow">
+          <section id="praktisch" class="s-flavours">
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="s-section-header mt-4 mt-md-5 mb-4">Praktische informatie</div>
+                <p class="text-left">
+                  De workshops kunnen gefaciliteerd worden in het Nederlands, Frans en Engels.
+                </p>
+                <br />
+                <p class="text-left">
+                  <b>BASISCONCEPTEN</b> <br /><br />
+                  Basisconcepten worden aangereikt in eem workshop van <b>4 uur</b>.
+                </p>
+                <br />
+                <p class="text-left">
+                  <b>VERTALING</b> <br /><br />
+                  Een tweede workshop (eveneens <b>4 uur </b>) biedt verdieping en ondersteunt de vertaling naar jullie specifieke praktijk. De twee
+                  workshops worden vaak gepland met een tussentijd van 2 tot 3 weken. Dit laat de deelnemers toe om de aangeleerde basisconcepten aan
+                  de hand van een bedrijfseigen voorbeeld in actie te zetten.
+                </p>
+                <br />
+                <p class="text-left">
+                  <b>GROEPSGROOTTE</b><br /><br />
+                  Om de impact te maximaliseren werken we met 6-12 deelnemers per workshop. Elke groep wordt begeleid door een senior begeleider met
+                  jaren ervaring in procesdenken op de grens tussen IT en business.
+                </p>
+                <br />
+                <p><b>Wij passen graag samen met u het programma aan zodat het beantwoordt aan uw specifieke noden.</b></p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section id="info">
+        <div class="white">
+          <div class="container container--narrow">
+            <div class="row flex-row flex-wrap-reverse flex-md-row flex-md-wrap">
+              <div class="col-12 text-center mt-5 mb-4">
+                <h2 class="text-center">Benieuwd of deze aanpak ook uw team kan versterken?</h2>
+                <p class="mt-3 mb-3">
+                  Laat ons weten hoe en wanneer we u het best kunnen bereiken.<br />
+                  We maken graag tijd voor een babbel. (of mail naar info@alveare-change.com)
+                </p>
+                <div class="row">
+                  <div class="col-12 px-5">
+                    <div class="w-md-60 m-auto">
+                      <form name="info-form-bpmn" id="info-form-bpmn">
+                        <div class="form-group">
+                          <label for="name" class="d-block text-left text-gray mt-2">Voornaam, Naam</label>
+                          <input class="form-control" id="name" name="name" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="email" class="d-block text-left text-gray mt-2">E-mail</label>
+                          <input class="form-control" id="email" name="from" type="email" required />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="phone" class="d-block text-left text-gray mt-2">Telefoonnummer</label>
+                          <input class="form-control" id="phone" name="phone" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="available" class="d-block text-left text-gray mt-2">Wanneer kunnen we u het best bereiken?</label>
+                          <input class="form-control" id="available" name="available" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="remarks" class="d-block text-left text-gray mt-2">Heeft u een specifieke vraag?</label>
+                          <textarea class="form-control" id="question-bpmn" name="question-bpmn" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block smb-2 mt-5">Versturen</button>
+                      </form>
+
+                      <div class="alert alert-success my-3" role="alert" id="form-confirmation">
+                        <strong>We hebben je vraag goed ontvangen </strong> en laten snel van ons horen!
+                        <button type="button" class="btn btn-link p-0" id="form-confirmation-close">Sluiten</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="row mt-5 mr-0">
+        <div class="col-12 mb text-center text-white p-0">
+          <small class="text-gray text-col8"><a href="./">SANGOO</a> is een gedeponeerd merk van ALVEARE bv</small>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

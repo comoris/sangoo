@@ -7,7 +7,8 @@ export function Serialize(form) {
     var field = form.elements[i];
 
     // Don't serialize fields without a name, submits, buttons, file and reset inputs, and disabled fields
-    if (!field.name || field.disabled || field.type === 'file' || field.type === 'reset' || field.type === 'submit' || field.type === 'button') continue;
+    if (!field.name || field.disabled || field.type === 'file' || field.type === 'reset' || field.type === 'submit' || field.type === 'button')
+      continue;
 
     // If a multi-select, get all selections
     if (field.type === 'select-multiple') {
@@ -70,3 +71,4 @@ if (formConfirmationClose) {
 initFormSubmit('contact-form'); // add id
 initFormSubmit('order-form');
 initFormSubmit('info-form');
+initFormSubmit('info-form-bpmn');
