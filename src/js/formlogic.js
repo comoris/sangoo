@@ -72,3 +72,4 @@ initFormSubmit('contact-form'); // add id
 initFormSubmit('order-form');
 initFormSubmit('info-form');
 initFormSubmit('info-form-bpmn');
+initFormSubmit('info-form-caring');
