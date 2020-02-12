@@ -181,8 +181,8 @@ module.exports = {
       template: './src/sangoo_bpmn.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'sangoo_caring.html',
-      template: './src/sangoo_caring.html',
+      filename: 'sangoo-change-management-organisatie-ondersteunen.html',
+      template: './src/sangoo-change-management-organisatie-ondersteunen.html',
     }),
     new CopyWebpackPlugin([
       {
