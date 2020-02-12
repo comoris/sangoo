@@ -180,6 +180,10 @@ module.exports = {
       filename: 'sangoo_bpmn.html',
       template: './src/sangoo_bpmn.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'sangoo-change-management-organisatie-ondersteunen.html',
+      template: './src/sangoo-change-management-organisatie-ondersteunen.html',
+    }),
     new CopyWebpackPlugin([
       {
         from: 'src/assets/images',
