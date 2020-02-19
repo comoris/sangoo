@@ -184,6 +184,10 @@ module.exports = {
       filename: 'sangoo-change-management-organisatie-ondersteunen.html',
       template: './src/sangoo-change-management-organisatie-ondersteunen.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'testimonial-tarkett.html',
+      template: './src/testimonial-tarkett.html',
+    }),
     new CopyWebpackPlugin([
       {
         from: 'src/assets/images',
