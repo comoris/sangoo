@@ -157,8 +157,8 @@ module.exports = {
       template: './src/cube/cube.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'clf.html',
-      template: './src/clf.html',
+      filename: 'change-leadership-framework.html',
+      template: './src/change-leadership-framework.html',
     }),
     new HtmlWebpackPlugin({
       filename: 'sangoo_open.html',
