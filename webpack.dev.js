@@ -121,16 +121,16 @@ module.exports = {
       template: './src/embed.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'sangood.html',
-      template: './src/sangood.html',
+      filename: 'sangoo-change-management-for-decisiontakers.html',
+      template: './src/sangoo-change-management-for-decisiontakers.html',
     }),
     new HtmlWebpackPlugin({
       filename: 'testimonial_vpk.html',
       template: './src/testimonial_vpk.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'sangoop.html',
-      template: './src/sangoop.html',
+      filename: 'sangoo-change-management-for-professionals.html',
+      template: './src/sangoo-change-management-for-professionals.html',
     }),
     new HtmlWebpackPlugin({
       filename: 'reading001.html',
@@ -149,8 +149,8 @@ module.exports = {
       template: './src/evaluation.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'sangooc.html',
-      template: './src/sangooc.html',
+      filename: 'sangoo-support-your-organisation-in change.html',
+      template: './src/sangoo-support-your-organisation-in change.html',
     }),
     new HtmlWebpackPlugin({
       filename: 'cube/cube.html',
