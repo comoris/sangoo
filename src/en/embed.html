@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    ${require('./partials/head.html')}
+    ${require('../partials/head-en.html')}
   </head>
 
   <body>
@@ -36,7 +36,7 @@
                   <a class="nav-link" onclick="toggleMobileMenu()" href="./experience.html">Learning experiences</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" onclick="toggleMobileMenu()" href="./embed.html">Embed change</a>
+                  <a class="nav-link" onclick="toggleMobileMenu()" href="#">Embed change</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" onclick="toggleMobileMenu()" href="#contact">contact</a>
@@ -59,8 +59,11 @@
         <section class="s-top-banner">
           <div class="row">
             <div class="col-12 mb-md-5">
-              <h1 class="mb-4 text-md-center text-left">Bite sized change leadership inspiration</h1>
-            </div>
+              <h1 class="mb-4">How to make change stick?</h1>
+              <p>
+                One of the main challenges of change is to ensure it is here to stay. We offer you different possibilities, adoptable to your specific needs, budget and context.
+              </p>
+             </div>
           </div>
         </section>
       </div>
@@ -68,111 +71,110 @@
       <!--  -->
       <div class="bg-white">
         <div class="container container--narrow">
-          <div class="row flex-row flex-wrap flex-md-row flex-md-wrap">
-            <div class="col-md-12 text-center p-0">
-              <img class="img-fluid mt-md-5 mt-sm-2" src="./images/t&tboxproduct.png" alt="" />
-            </div>
+          <section id="refresh">
+            <div class="row flex-row flex-wrap flex-md-row flex-md-wrap">
+              <div class="col-md-6 text-center p-0">
+                <img class="img-fluid mt-md-5 mt-sm-2" src="./images/embed_refresh.jpeg" alt="" />
+              </div>
 
-            <div class="col-md-12 pl-md-5 ">
-              <p class="s-top-banner text-justify pt-3">
-                SANGOO tricks & treats is a tool meant to support and inspire you in taking on the change challenges you face. The handsize box
-                contains 12 cards, translating change insights from different fields (psychology, neurology, change research, ...) to hands-on, ready
-                to use content. Recognisable, applicable and seasoned with a wink to the real life challenges.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+              <div class="col-md-6 text-left pl-md-5 mt-5">
+                <h2>Online refresh</h2>
+                <p class="text-justify pt-3">
+                  SANGOO refresh, the most lightweight of our solutions to embed change.
+                  Following a SANGOO learning experience, the online refresh module supports embedding the learned change leadership concepts in a light, bite-sized way.
+                </p>
+                <p>At an agreed time interval, a rotating set of 5 multiple choice questions is presented to the participant.
+                </p>
+              </div>
 
-      <div class="bg-white">
-        <div class="container container--narrow">
-          <div class="row flex-row flex-wrap flex-md-row flex-md-wrap">
-            <div class="col-md-6 text-left pl-md-5">
-              <h2>For Who?</h2>
-              <p class="s-top-banner text-justify pt-3">
-                Anyone playing an active role in realising change. The cards bring insights about change that are universal. Insights that are
-                indepedent of industry, seniority level or function title.
-              </p>
-            </div>
+              <div class="col-md-12 text-justify mt-md-3 mb-4">
+                The questions are enriched with instant feedback (providing insight in the correct answer and motivation) supporting an optimal learning experience. Our refresh tool is webbased and can be run on desktop and mobile (on the go).
 
-            <div class="col-md-6 text-left pl-md-5">
-              <h2>How to use?</h2>
-              <p class="s-top-banner text-justify pt-3">
-                The set can be used to inspire, refresh or even to challenge your change approach and believes. The cards are enriched with challenger
-                questions meant to trigger your reflection or even to involve your team in the reflection exercise.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-gray-100 mt-5 pb-5">
-        <div class="container container--narrow">
-          <div class="row flex-row flex-wrap-reverse flex-md-row flex-md-wrap">
-            <div class="col-12 text-center mt-5 mb-4">
-              <h2 class="text-center">ORDER YOUR SET!</h2>
-              <p>Order your Tricks & Treats set for 30 EUR including free shipping within BENELUX.</p>
-              <div class="row">
-                <div class="col-12 px-5">
-                  <div class="w-md-60 m-auto">
-                    <form name="order-form" id="order-form">
-                      <div class="form-group">
-                        <label for="amount" class="d-block text-left text-gray mt-5">Number of sets</label>
-                        <input class="form-control" id="number" name="amount" type="number" />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="name" class="d-block text-left text-gray mt-2">First Name, Last Name</label>
-                        <input class="form-control" id="name" name="name" type="text" />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="email" class="d-block text-left text-gray mt-2">E-mail</label>
-                        <input class="form-control" id="email" name="from" type="email" required />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="d-aderess" class="d-block text-left text-gray mt-2">Delivery address</label>
-                        <input class="form-control" id="d-address" name="d-address" type="text" />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="i-address" class="d-block text-left text-gray mt-2">Invoicing address (if different from delivery address)</label>
-                        <input class="form-control" id="i-address" name="i-address" type="text" />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="company" class="d-block text-left text-gray mt-2">Company name</label>
-                        <input class="form-control" id="company" name="company" type="text" />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="VAT" class="d-block text-left text-gray mt-2">VAT number</label>
-                        <input class="form-control" id="VAT" name="VAT" type="text" />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="Comments" class="d-block text-left text-gray mt-2">Comments</label>
-                        <input class="form-control" id="comments" name="Comments" type="text" />
-                      </div>
-
-                      <button type="submit" class="btn btn-primary btn-block smb-2 mt-5">Register my order</button>
-                    </form>
-                    <div class="alert alert-success my-3" role="alert" id="form-confirmation">
-                      <strong>Info!</strong> thanks for reaching out, we'll contact you as soon as possible.
-                      <button type="button" class="btn btn-link p-0" id="form-confirmation-close">Close</button>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-          </div>
+
+            <!-- <div class="text-left mb-5 mb-sum-2">
+              <a class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/-n7JNOLzLQg" data-target="#myModal">
+                <button type="button" class="s-arrow-link btn btn-light">
+                  <span class="s-arrow-text text-left pl-2">Discover the testimonials</span>
+                  <svg class="s-arrow-icon" xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                  </svg>
+                </button>
+              </a>
+            </div> -->
+          </section>
         </div>
-      </div>
+
+
+          <div class="bg-gray-100 mt-5 pb-1">
+            <div class="container container--narrow">
+              <section id="coaching">
+                <div class="row flex-row flex-wrap-reverse mb-4">
+                  <div class="col-md-6 p-md-4">
+                    <h2 class="mt-4 mt-sm-0 mt-md-0">Tailored coaching</h2>
+                    <p class="text-justify pt-3">
+                        After following the SANGOO Xperience, you feel that you and/or your team could use some tailored support in translating the learned concepts into your own reality, to become a true change leader.
+
+                        For this challenge, we offer you our tailored coaching. In a limited number of sessions, our senior coaches will assist you and your team to realise this translation.
+
+
+
+                    </p>
+                  </div>
+
+                  <div class="col-md-6 text-center p-0 p-md-4">
+                    <img class="img-fluid mt-md-5 responsive-img-sm" src="./images/embed_coaching.jpeg" alt="" />
+                  </div>
+                </div>
+
+
+                  <div class="col-md-12 text-left text-md-justify mt-md-3 mb-4 pl-0">
+                      All our interventions are geared towards delivering sustainable results. They are limited in time with iterative go/no go moments and contributing to your long term objectives.
+                    </div>
+
+
+                <div class="text-left mb-5">
+                  <button type="button" class="s-arrow-link btn btn-light">
+                    <a href="./testimonial_vpk.html">
+                      <span class="s-arrow-text pl-2">Discover the VPK testimonial</span>
+                      <svg class="s-arrow-icon" xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                      </svg>
+                    </a>
+                  </button>
+                </div>
+              </section>
+            </div>
+        </div>
+        <div class="bg-white">
+          <div class="container container--narrow">
+            <section id="handson">
+              <div class="row flex-row-reverse flex-wrap-reverse flex-md-row flex-md-wrap">
+                <div class="col-md-12 p-5 p-md-4">
+                  <h2 class="mt-0 mt-md-4 mt-sm-4">Hands-on change support</h2>
+                  <p class="text-justify pt-3">
+                      Not sure where to start? Through our Change Leadership Coaching we assist you on how to approach and shape your change.
+
+                      We guide you through the world of change, using our Change Leadership Framework as a guideline, starting from the WHY of your change, upto the kick-off of your different change initiatives. We will help you to shape your initial change message, inventorize your stakeholders, shape your change approach, design your communication plan, …
+                      As a result, you evolve towards a continuous improvement mindset, including ways to optimize engagement of all individuals involved.
+
+                      Our hands-on change support is agile inspired; it is transparent, result driven, limited in time with iterative go/no go moments.
+
+                  </p>
+                </div>
+              </div>
+          </section>
+        </div>
+        </div>
+
+
 
       <!-- Top stories - Flavour 2 of the grid -->
       <div class="mb-2 mb-sm-7 mb-md-5 pb-md-5 pb-sm-5">
-        <div class="container container--narrow">
+          <div class="container container--narrow">
           <section class="s-stories">
             <div class="row">
               <div class="col-12">
@@ -205,20 +207,11 @@
                   <div class="s-story__subtitle">about SANGOO</div>
                 </a>
 
-                <a
-                  href="https://www.sangoo.be/questionnaire/questionnaire_en.php"
-                  target="blank"
-                  class="s-story s-story--sm s-story-grid-item-3"
-                  style="background-image: url('./images/grid_assess.jpg'); background-size:cover"
-                >
+                <a href="https://www.sangoo.be/questionnaire/questionnaire_en.php" class="s-story s-story--sm s-story-grid-item-3" target="blank" style="background-image: url('./images/grid_assess.jpg'); background-size:cover">
                   <div class="s-story__title">Assess your change</div>
                 </a>
 
-                <a
-                  href="./reading001.html"
-                  class="s-story s-story--sm s-story-grid-item-2"
-                  style="background-image: url('./images/grid_reading_tip2.jpg'); background-size:cover"
-                >
+                <a href="./reading001.html" class="s-story s-story--sm s-story-grid-item-2" style="background-image: url('./images/grid_reading_tip2.jpg'); background-size:cover">
                   <div class="s-story__title">READING tip</div>
                 </a>
 
@@ -258,6 +251,6 @@
       </div>
     </main>
 
-    ${require('./partials/footer.html')}
+    ${require('../partials/footer-en.html')}
   </body>
 </html>

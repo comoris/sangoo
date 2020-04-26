@@ -1,12 +1,28 @@
 const path = require('path');
-
+const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const buildPath = path.resolve(__dirname, 'dist');
 
-module.exports = {
+const nlConfig = fs.readdirSync('./src/nl/').map(
+  (conf) =>
+    new HtmlWebpackPlugin({
+      filename: `./nl/${conf}`,
+      template: `./src/nl/${conf}`,
+    }),
+);
+
+const enConfig = fs.readdirSync('./src/en/').map(
+  (conf) =>
+    new HtmlWebpackPlugin({
+      filename: `${conf}`,
+      template: `./src/en/${conf}`,
+    }),
+);
+
+const webpackConfig = {
   devtool: 'eval-cheap-module-source-map',
   entry: {
     main: './src/js/index.js',
@@ -104,90 +120,8 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './src/index.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'experience.html',
-      template: './src/experience.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'inspiration.html',
-      template: './src/inspiration.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'embed.html',
-      template: './src/embed.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'sangoo-change-management-for-decisiontakers.html',
-      template: './src/sangoo-change-management-for-decisiontakers.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'testimonial_vpk.html',
-      template: './src/testimonial_vpk.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'sangoo-change-management-for-professionals.html',
-      template: './src/sangoo-change-management-for-professionals.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'reading001.html',
-      template: './src/reading001.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'reading002.html',
-      template: './src/reading002.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'sangootandt.html',
-      template: './src/sangootandt.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'evaluation.html',
-      template: './src/evaluation.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'sangoo-support-your-organisation-in change.html',
-      template: './src/sangoo-support-your-organisation-in change.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'cube/cube.html',
-      template: './src/cube/cube.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'change-leadership-framework.html',
-      template: './src/change-leadership-framework.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'sangoo_open.html',
-      template: './src/sangoo_open.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'sangoo_open_ref.html',
-      template: './src/sangoo_open_ref.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'sangoo_open_clf.html',
-      template: './src/sangoo_open_clf.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'sangoo_open_trainers.html',
-      template: './src/sangoo_open_trainers.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'sangoo_bpmn.html',
-      template: './src/sangoo_bpmn.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'sangoo-change-management-organisatie-ondersteunen.html',
-      template: './src/sangoo-change-management-organisatie-ondersteunen.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'testimonial-tarkett.html',
-      template: './src/testimonial-tarkett.html',
-    }),
+    ...enConfig,
+    ...nlConfig,
     new CopyWebpackPlugin([
       {
         from: 'src/assets/images',
@@ -203,3 +137,5 @@ module.exports = {
     }),
   ],
 };
+
+module.exports = webpackConfig;

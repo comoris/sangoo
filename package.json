@@ -1,9 +1,7 @@
 {
   "name": "sangoo-site",
   "version": "1.0.0",
-  "engines": {
-    
-  },
+  "engines": {},
   "description": "sangoo site",
   "private": "true",
   "license": "MIT",
@@ -44,4 +42,3 @@
     "webpack-dev-server": "^3.4.1"
   }
 }
-
