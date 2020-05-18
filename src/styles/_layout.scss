@@ -11,6 +11,13 @@ body {
 .container--narrow {
   max-width: 800px;
 }
+.container--verynarrow {
+  max-width: 700px;
+}
+
+.container--large {
+  max-width: 900px;
+}
 
 .responsive-img {
   &-sm {
