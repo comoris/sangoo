@@ -13,7 +13,7 @@
 
 .s-top-banner {
   padding-top: 70px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 
   @media (min-width: $breakpoint-sm) {
     padding-top: 160px;
@@ -44,7 +44,7 @@
     p {
       color: $white;
       text-align: left;
-      font-size: 1.2em;
+      font-size: 1.2rem;
       line-height: 1.5em;
     }
 
@@ -121,10 +121,17 @@ section p {
     }
   }
 }
-
-.s-approach {
+.s-footnote {
+  font-size: 0.6rem;
 }
 
+.s-roboto-header {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 .s-contact {
   padding-bottom: 5rem;
 }

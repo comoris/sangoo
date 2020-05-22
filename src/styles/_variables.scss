@@ -1,24 +1,28 @@
-$white: #FFFFFF;
+$white: #ffffff;
 
-$col1: #005F8F;
+$col1: #005f8f;
 $col2: hsl(45, 100%, 51%);
-$col3: #1EC0B8;
-$col4: #FFAE1D;
+$col3: #1ec0b8;
+$col4: #ffae1d;
 $col5: #02b0df;
 $col6: #ff5f22;
-$col7: rgb(41, 40, 40);
+$col7: #343a40;
 $col8: #7a7a7a;
+$col9: #009ce4ff;
+$col10: rgb(7, 179, 44);
 
-$col-shades: (white: $white,
-    col1: $col1,
-    col2: $col2,
-    col3: $col3,
-    col4: $col4,
-    col5: $col5,
-    col6: $col6,
-    col7: $col7,
-    col8: $col8,
-
+$col-shades: (
+  white: $white,
+  col1: $col1,
+  col2: $col2,
+  col3: $col3,
+  col4: $col4,
+  col5: $col5,
+  col6: $col6,
+  col7: $col7,
+  col8: $col8,
+  col9: $col9,
+  col10: $col10,
 );
 
 $gray-100: #f5f5f5;
@@ -29,16 +33,17 @@ $gray-600: #757575;
 $gray-700: #616161;
 $gray-900: #212121;
 
-$gray-shades: (gray-100: $gray-100,
-    gray-300: $gray-300,
-    gray-400: $gray-400,
-    gray-500: $gray-500,
-    gray-600: $gray-600,
-    gray-700: $gray-700,
-    gray-900: $gray-900,
+$gray-shades: (
+  gray-100: $gray-100,
+  gray-300: $gray-300,
+  gray-400: $gray-400,
+  gray-500: $gray-500,
+  gray-600: $gray-600,
+  gray-700: $gray-700,
+  gray-900: $gray-900,
 );
 
 $spacers: (6 7);
 
-$breakpoint-sm: 576px; // 768px
+$breakpoint-sm: 576px; // 576px
 $breakpoint-md: 768px; // 768pxs
