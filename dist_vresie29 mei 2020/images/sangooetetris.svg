@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="500"
+   height="350"
+   viewBox="0 0 375.00001 262.50001"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg853"
+   sodipodi:docname="sangooetetris.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs857">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1307"
+       x="-0.10089981"
+       width="1.2017996"
+       y="-0.15172598"
+       height="1.303452">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="122.81926"
+         id="feGaussianBlur1309" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1204"
+       x="-0.069720001"
+       width="1.13944"
+       y="-1.8591996"
+       height="4.7183993">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="87.150001"
+         id="feGaussianBlur1206" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="2097"
+     id="namedview855"
+     showgrid="false"
+     inkscape:zoom="1.3975027"
+     inkscape:cx="163.53798"
+     inkscape:cy="123.23766"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g851"
+     units="px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid841" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata837">
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title />
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     transform="matrix(0.1,0,0,-0.1,0,262.50003)"
+     id="g851"
+     style="fill:#000000;stroke:none">
+    <path
+       style="fill:#77591e;fill-opacity:0.32038838;filter:url(#filter1307)"
+       d="m 9899.5413,5295.4136 484.9997,-0.6888 -0.689,-484.9996 -0.689,-484.9995 484.999,-0.6889 485,-0.689 0.689,484.9996 0.689,484.9995 489.999,-0.696 490,-0.6961 0.689,484.9996 0.689,484.9995 -1459.999,2.0739 -1459.9984,2.0738 -0.6889,-484.9995 -0.689,-484.9995 z"
+       id="path877"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.42974235,0,0,0.37015868,-2628.2705,-128.15869)"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path863"
+       d="m 1695.8355,1888.0201 174.8872,-0.2483 -0.2485,-174.8873 -0.2486,-174.8871 174.8873,-0.2485 174.8872,-0.2486 0.2483,174.8872 0.2485,174.8873 176.6901,-0.2511 176.6902,-0.2509 0.2482,174.8873 0.2485,174.8871 -526.4642,0.748 -526.4645,0.7477 -0.2485,-174.8872 -0.2484,-174.8871 z"
+       style="fill:#ffc040;fill-opacity:1;stroke:#ffc040;stroke-width:23.92875671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999" />
+    <text
+       id="text871"
+       y="-1999.6752"
+       x="1637.1542"
+       style="font-style:normal;font-weight:normal;font-size:254.78985596px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.36974525"
+       xml:space="preserve"
+       transform="scale(1,-1)"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cocon;-inkscape-font-specification:Cocon;stroke-width:6.36974525"
+         y="-1999.6752"
+         x="1637.1542"
+         id="tspan869"
+         sodipodi:role="line">sangoo</tspan></text>
+    <rect
+       style="opacity:0.651;fill:#a6a6a6;fill-opacity:1;stroke:none;stroke-width:32.51338959;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter1204)"
+       id="rect842"
+       width="3000"
+       height="112.50002"
+       x="337.5"
+       y="187.49977"
+       transform="matrix(1.0086341,0,0,-0.87246157,24.251307,465.73727)"
+       ry="34.056152" />
+    <path
+       d="m 2252.8337,713.87499 v -349.7748 h 351.5778 351.5776 v 349.7748 349.77471 h -351.5776 -351.5778 z"
+       id="path839"
+       inkscape:connector-curvature="0"
+       style="fill:#a6a6a6;fill-opacity:1;stroke:#a6a6a6;stroke-width:23.92875671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999" />
+    <path
+       d="m 2041.5611,716.84129 h -174.8874 l -1.6016,206.9217 1.935,140.51871 h -351.5777 -351.5776 l -1.2141,-139.79761 1.0818,-173.8056 175.9691,-1.0817 175.6087,-0.7212 v -174.8874 -210.1908 h 349.7748 349.7747 v 210.1908 l 1.6017,142.8531 z"
+       id="path841"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccc"
+       style="fill:#a6a6a6;fill-opacity:1;stroke:#a6a6a6;stroke-width:23.92875671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999" />
+    <path
+       d="m 597.62538,711.45899 190.9043,-1.3534 -0.2484,174.8873 -0.2484,174.88721 158.8701,1.8501 174.88732,0.2485 0.2484,-174.88731 0.2484,-174.8872 176.6901,0.2509 176.6902,0.251 0.2483,-174.8872 0.2482,-174.8872 -526.46462,-0.7478 -549.6869,-0.7477 -0.2484,174.8872 -0.2485,174.8872 z"
+       id="path843"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccc"
+       style="fill:#a6a6a6;fill-opacity:1;stroke:#a6a6a6;stroke-width:23.92875671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999" />
+    <path
+       d="m 400.95378,1099.3017 v 337.1125 h 526.465 526.46522 V 1274.1891 1099.3017 H 1102.3062 750.72848 V 924.41429 749.52689 h -174.8874 -174.8873 z"
+       id="path847"
+       inkscape:connector-curvature="0"
+       style="fill:#a6a6a6;fill-opacity:1;stroke:#a6a6a6;stroke-width:23.92875671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999"
+       sodipodi:nodetypes="ccccccccccccc" />
+    <path
+       d="m 2996.6775,363.79849 h 174.8876 174.8874 l -1.9353,560.4145 1.6017,512.04981 h -349.7748 -349.7748 l -1.6017,-160.472 v -174.8874 h 174.8874 174.8874 V 749.32559 Z"
+       id="path849"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccc"
+       style="fill:#a6a6a6;fill-opacity:1;stroke:#a6a6a6;stroke-width:23.92875671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:151.26655579px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.78166366"
+       x="684.14301"
+       y="-1207.3054"
+       id="text867"
+       transform="scale(1.0021507,-0.99785391)"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999"><tspan
+         sodipodi:role="line"
+         id="tspan865"
+         x="684.14301"
+         y="-1207.3054"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Nunito Light';-inkscape-font-specification:'Nunito Light, ';stroke-width:3.78166366">VISION</tspan></text>
+    <text
+       transform="scale(1.0021507,-0.99785391)"
+       id="text875"
+       y="-848.59784"
+       x="1200.2493"
+       style="font-style:normal;font-weight:normal;font-size:151.26655579px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.78166366"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Nunito Light';-inkscape-font-specification:'Nunito Light, ';stroke-width:3.78166366"
+         y="-848.59784"
+         x="1200.2493"
+         id="tspan873"
+         sodipodi:role="line">VALUES</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:151.26655579px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.78166366"
+       x="2309.866"
+       y="-674.77838"
+       id="text1356"
+       transform="scale(1.0021507,-0.99785391)"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999"><tspan
+         sodipodi:role="line"
+         id="tspan1354"
+         x="2309.866"
+         y="-674.77838"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Nunito Light';-inkscape-font-specification:'Nunito Light, ';stroke-width:3.78166366">GOALS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:151.26655579px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.78166366"
+       x="558.39594"
+       y="-490.71014"
+       id="text1360"
+       transform="scale(1.0021507,-0.99785391)"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999"><tspan
+         sodipodi:role="line"
+         id="tspan1358"
+         x="558.39594"
+         y="-490.71014"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Nunito Light';-inkscape-font-specification:'Nunito Light, ';stroke-width:3.78166366">STRATEGY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:151.26655579px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.78166366"
+       x="2671.4861"
+       y="-1207.3054"
+       id="text1364"
+       transform="scale(1.0021507,-0.99785391)"
+       inkscape:export-filename="C:\Users\Chang\Desktop\WEBSITE github\sangoo\src\assets\images\sangooetetris.png"
+       inkscape:export-xdpi="44.939999"
+       inkscape:export-ydpi="44.939999"><tspan
+         sodipodi:role="line"
+         id="tspan1362"
+         x="2671.4861"
+         y="-1207.3054"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Nunito Light';-inkscape-font-specification:'Nunito Light, ';stroke-width:3.78166366">RESULTS</tspan></text>
+  </g>
+</svg>
